@@ -1,0 +1,66 @@
+body{
+    max-height: 100vh;
+    min-width: 750px;
+}
+
+/* Alineación vertical */
+.container{
+    height: 100%;
+    text-align: center;
+}
+
+.container:before{
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    height: 100%;
+}
+
+.element{
+    text-align: center;  /* vertical alignment of the inline element */
+}
+
+.nw {
+    position: relative;
+    left: 140px;
+    top: 20px;
+    -webkit-transition: -webkit-transform .7s ease-in-out;
+            transition:         transform .7s ease-in-out;
+    max-width: 320px;
+}
+
+.nw:hover {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+            cursor: pointer;
+}
+
+.nw:active {
+    -webkit-transition: -webkit-transform .1s ease-in-out;
+    transition:         transform .1s ease-in-out;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+
+}
+
+.web{
+    position: relative;
+    max-width: 400px;
+    top: 0;
+    right: 50px;
+    z-index: -1;
+    transform-style: preserve-3d;
+    transform: perspective(350px) rotateX(0deg) rotateY(-20deg);
+
+}
+
+h1{
+    font-family: 'Amatic SC', cursive;
+    font-size: 100px;
+}
+
+h2{
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    padding-top: 150px;
+}
