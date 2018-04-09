@@ -1,6 +1,6 @@
 body{
     max-height: 100vh;
-    min-width: 750px;
+    min-width: 1000px;
 }
 
 /* Alineación vertical */
@@ -58,7 +58,7 @@ h1{
     font-family: 'Source Sans Pro', cursive;
     font-weight: 60;
     font-size: 100px;
-    
+
 }
 
 h2{
