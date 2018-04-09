@@ -55,12 +55,13 @@ body{
 }
 
 h1{
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Source Sans Pro', cursive;
+    font-weight: 60;
     font-size: 100px;
 }
 
 h2{
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Source Sans Pro', cursive;
     font-size: 20px;
     padding-top: 150px;
 }
