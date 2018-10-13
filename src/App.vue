@@ -2,18 +2,21 @@
     <div id="app">
         <NavBar/>
         <Index/>
+        <WhatSection id="what" title="What is neiron dev?"/>
     </div>
 </template>
 
 <script>
 import NavBar from "./components/NavBar";
 import Index from "./components/Index";
+import WhatSection from "./components/WhatSection";
 
 export default {
     name: "App",
     components: {
         NavBar,
-        Index
+        Index,
+        WhatSection
     },
 };
 </script>

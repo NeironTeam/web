@@ -18,20 +18,20 @@ export default {
             msg: "prueba mensaje",
             buttons: [
                 {
-                    text: "Where",
-                    link: "#Where",
-                },
-                {
-                    text: "How",
-                    link: "#How",
+                    text: "What",
+                    link: "#what",
                 },
                 {
                     text: "Who",
-                    link: "#Who",
+                    link: "#who",
                 },
                 {
-                    text: "What",
-                    link: "#What",
+                    text: "How",
+                    link: "#how"
+                },
+                {
+                    text: "Where",
+                    link: "#where",
                 },
             ],
         };
@@ -56,6 +56,7 @@ export default {
         justify-content: space-between;
         align-items: center;
         padding: 2vh 3vw;
+        background: white;
     }
 
     .links {
