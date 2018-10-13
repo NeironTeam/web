@@ -17,13 +17,28 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .nav-button {
-    position: relative;
-    float: right;
-    top: 30px;
-    color: #242424;
+    display: inline-block;
+    vertical-align: top;
+    color: #888;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
+    transition: all .1s ease-in-out;
 }
+
+.nav-button:after {
+    content: "?";
+    color: transparent;
+    transition: all .1s ease-in-out;
+    padding-left: 2px;
+}
+
+.nav-button:hover, 
+.nav-button:active,
+.nav-button.active { color: #000; }
+
+.nav-button:hover:after, 
+.nav-button:active:after,
+.nav-button.active:after { color: #000; }
 </style>

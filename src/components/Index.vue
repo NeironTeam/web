@@ -41,16 +41,16 @@ export default {
         align-content: center;
     }
 
-    .inner {
+    .outter .inner {
         display: inline-block;
         vertical-align: top;
         width: 90%;
-        max-width: 400px;
+        max-width: 350px;
         height: auto;
         text-align: center;
     }
 
-    .logo {
+    .outter .inner .logo {
         display: inline-block;
         vertical-align: top;
         width: 60%;
@@ -59,7 +59,7 @@ export default {
         text-align: center;
     }
 
-    .title {
+    .outter .inner .title {
         position: relative;
         display: inline-block;
         vertical-align: top;
@@ -67,19 +67,19 @@ export default {
         width: 100%;
         height: auto;
         text-align: center;
-        margin: 5vh 0;
+        margin: 3.5vh 0;
         font-weight: 300;
         font-size: 6vh;
         padding: 0;
     }
 
-    .title small {
+    .outter .inner .title small {
         position: absolute;
         top: 5vh;
         font-size: 2.5vh;
     }
 
-    .subtitle {
+    .outter .inner .subtitle {
         display: inline-block;
         vertical-align: top;
         text-align: center;
@@ -88,12 +88,12 @@ export default {
         color: #444;
     }
 
-    .mouse-icon {
+    .outter .mouse-icon {
         display: inline-block;
         vertical-align: top;
         width: 100%;
         text-align: center;
-        margin: 3vh auto;
+        margin: 1vh auto;
         position: absolute;
         bottom: 0;
     }

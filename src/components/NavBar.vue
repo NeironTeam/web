@@ -1,7 +1,9 @@
 <template>
     <div class="navbar">
         <MainLogo/>
-        <NavButton :text="button.text" :link="button.link" v-for="button in buttons" :key="button.order"/>
+        <div class="links">
+            <NavButton :text="button.text" :link="button.link" v-for="(button, index) in buttons" :key="index"/>
+        </div>
     </div>
 </template>
 
@@ -16,23 +18,19 @@ export default {
             msg: "prueba mensaje",
             buttons: [
                 {
-                    order: 1,
-                    text: "Where?",
+                    text: "Where",
                     link: "#Where",
                 },
                 {
-                    order: 1,
-                    text: "How?",
+                    text: "How",
                     link: "#How",
                 },
                 {
-                    order: 3,
-                    text: "Who?",
+                    text: "Who",
                     link: "#Who",
                 },
                 {
-                    order: 4,
-                    text: "What?",
+                    text: "What",
                     link: "#What",
                 },
             ],
@@ -47,8 +45,21 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.navbar {
-    position: fixed;
-    display: flex;
-}
+    .navbar {
+        position: fixed;
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        z-index: 1;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2vh 3vw;
+    }
+
+    .links {
+        display: inline-block;
+        vertical-align: top;
+    }
 </style>
