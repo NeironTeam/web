@@ -21,6 +21,7 @@ export default {
     vertical-align: top;
     color: #888;
     text-align: center;
+    margin-left: 10px;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;

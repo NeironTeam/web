@@ -1,5 +1,5 @@
 <template>
-    <div class="navbar">
+    <div class="navbar" :class="{ 'scrolled': !initialPosition }">
         <MainLogo/>
         <div class="links">
             <NavButton :text="button.text" :link="button.link" v-for="(button, index) in buttons" :key="index"/>
@@ -13,9 +13,21 @@ import NavButton from "./NavButton";
 
 export default {
     name: "NavBar",
+    created() {
+        this.initialHeight = Math.max(
+            document.body.scrollHeight,
+            document.body.offsetHeight, 
+            document.documentElement.clientHeight, 
+            document.documentElement.scrollHeight, 
+            document.documentElement.offsetHeight
+        );
+
+        window.addEventListener("scroll", this.updateClass);
+    },
     data() {
         return {
-            msg: "prueba mensaje",
+            initialHeight: 0,
+            initialPosition: true,
             buttons: [
                 {
                     text: "What",
@@ -35,6 +47,16 @@ export default {
                 },
             ],
         };
+    },
+    methods: {
+        updateClass(event) {
+            let current = Math.max( 
+                document.documentElement.scrollTop, 
+                document.body.scrollTop
+            );
+
+            this.initialPosition = current <= this.initialHeight;
+        }
     },
     components: {
         MainLogo,
@@ -56,11 +78,17 @@ export default {
         justify-content: space-between;
         align-items: center;
         padding: 2vh 3vw;
-        background: white;
     }
 
-    .links {
+    .navbar .links {
         display: inline-block;
         vertical-align: top;
+        transition: all .2s ease-in-out;
+    }
+
+    .navbar.scrolled .links {
+        background: white;
+        border-radius: 100px;
+        box-shadow: 10px 10px 60px -20px rgba(0,0,0,0.75);
     }
 </style>
