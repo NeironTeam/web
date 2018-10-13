@@ -59,7 +59,7 @@ export default {
         margin: 20vh 8% 40vh;
         padding: 5vh 5vw;
         background: linear-gradient(45deg, #dad4ff 0%,#7b4888de 100%);
-        border-radius: .5vw;
+        border-radius: .8vh;
         box-shadow: 10px 10px 80px -10px rgba(0,0,0,0.75);
     }
 
@@ -92,7 +92,7 @@ export default {
         padding: 2vh 1vw;
         height: auto;
         color: white;
-        border-radius: .5vw;
+        border-radius: .8vh;
         box-shadow: 10px 20px 80px -10px rgba(0,0,0,0.75);
     }
 
@@ -111,6 +111,22 @@ export default {
         width: 100%;
         height: auto;
         font-size: 18px;
+    }
+
+    @media only screen and (max-width: 978px) {
+        .section-content {
+            min-height: 0;
+        }
+        .section-content .section-box-group { 
+            position: relative;
+            flex-wrap: wrap;
+        }
+        .section-content .section-box-group .section-box { 
+            width: 96%;
+            min-height: 0;
+            margin: 1.5vh 2vw;
+            padding: 3vh 3vw;
+        }
     }
 </style>
 

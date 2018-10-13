@@ -72,9 +72,11 @@ export default {
 
 <style>
     .navbar {
-        position: fixed;
         display: inline-block;
         vertical-align: top;
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
         z-index: 1;
 

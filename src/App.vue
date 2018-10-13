@@ -34,5 +34,7 @@ body {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 </style>
