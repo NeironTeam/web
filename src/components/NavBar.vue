@@ -1,15 +1,17 @@
 <template>
     <div class="navbar" :class="{ 'scrolled': !initialPosition }">
-        <MainLogo/>
+        <a href="#" v-scroll-to="'#index'">
+            <MainLogo/>
+        </a>
         <div class="links">
-            <NavButton :text="button.text" :link="button.link" v-for="(button, index) in buttons" :key="index"/>
+            <NavLink :text="link.text" :link="link.link" v-for="(link, index) in links" :key="index"/>
         </div>
     </div>
 </template>
 
 <script>
 import MainLogo from "./MainLogo";
-import NavButton from "./NavButton";
+import NavLink from "./NavLink";
 
 export default {
     name: "NavBar",
@@ -28,7 +30,10 @@ export default {
         return {
             initialHeight: 0,
             initialPosition: true,
-            buttons: [
+            home: {
+                link: "home"
+            },
+            links: [
                 {
                     text: "What",
                     link: "#what",
@@ -60,13 +65,12 @@ export default {
     },
     components: {
         MainLogo,
-        NavButton,
+        NavLink,
     },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
     .navbar {
         position: fixed;
         display: inline-block;

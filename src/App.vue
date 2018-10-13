@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <NavBar/>
-        <Index/>
+        <Index id="index"/>
         <WhatSection id="what" title="What is neiron dev?"/>
     </div>
 </template>
