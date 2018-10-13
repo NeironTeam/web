@@ -94,10 +94,7 @@ export default {
         color: white;
         border-radius: .5vw;
         box-shadow: 10px 20px 80px -10px rgba(0,0,0,0.75);
-        transition: all .2s ease-in-out;
     }
-
-    .section-content .section-box-group .section-box:hover { transform: translateY(-5px); }
 
     .section-content .section-box-group .section-box .box-title {
         display: inline-block;
