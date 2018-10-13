@@ -30,7 +30,7 @@ export default {
 .nav-button:after {
     content: "?";
     color: transparent;
-    transition: all .1s ease-in-out;
+    transition: all .2s ease-in-out;
     padding-left: 2px;
 }
 
