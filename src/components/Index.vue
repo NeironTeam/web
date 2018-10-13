@@ -11,7 +11,7 @@
             <h2 class="subtitle">Tabulamos con espacios</h2>
         </div>
 
-        <Mouse class="mouse-icon"/>
+        <Mouse class="mouse"/>
     </div>
 </template>
 
@@ -88,12 +88,11 @@ export default {
         color: #444;
     }
 
-    .outter .mouse-icon {
+    .outter .mouse {
         display: inline-block;
         vertical-align: top;
         width: 100%;
         text-align: center;
-        margin: 1vh auto;
         position: absolute;
         bottom: 0;
     }
