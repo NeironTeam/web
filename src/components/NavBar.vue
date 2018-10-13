@@ -1,6 +1,6 @@
 <template>
     <div class="navbar" :class="{ 'scrolled': !initialPosition }">
-        <a href="#" v-scroll-to="'#index'">
+        <a href="#" v-scroll-to="home.link">
             <MainLogo/>
         </a>
         <div class="links">
@@ -31,7 +31,7 @@ export default {
             initialHeight: 0,
             initialPosition: true,
             home: {
-                link: "home"
+                link: "#index"
             },
             links: [
                 {
@@ -75,8 +75,7 @@ export default {
         display: inline-block;
         vertical-align: top;
         position: fixed;
-        top: 0;
-        left: 0;
+        top: 0; left: 0;
         width: 100%;
         z-index: 1;
 
