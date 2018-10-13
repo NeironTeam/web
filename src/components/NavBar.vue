@@ -1,35 +1,54 @@
 <template>
-    <div class="hello">
-
+    <div class="navbar">
+        <MainLogo/>
+        <NavButton :text="button.text" :link="button.link" v-for="button in buttons" :key="button.order"/>
     </div>
 </template>
 
 <script>
+import MainLogo from "./MainLogo";
+import NavButton from "./NavButton";
+
 export default {
     name: "NavBar",
     data() {
         return {
-            msg: "Welcome to Your Vue.js App",
+            msg: "prueba mensaje",
+            buttons: [
+                {
+                    order: 1,
+                    text: "Where?",
+                    link: "#Where",
+                },
+                {
+                    order: 1,
+                    text: "How?",
+                    link: "#How",
+                },
+                {
+                    order: 3,
+                    text: "Who?",
+                    link: "#Who",
+                },
+                {
+                    order: 4,
+                    text: "What?",
+                    link: "#What",
+                },
+            ],
         };
+    },
+    components: {
+        MainLogo,
+        NavButton,
     },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1,
-h2 {
-    font-weight: normal;
-}
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-li {
-    display: inline-block;
-    margin: 0 10px;
-}
-a {
-    color: #42b983;
+.navbar {
+    position: fixed;
+    display: flex;
 }
 </style>
