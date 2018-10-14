@@ -4,7 +4,9 @@
             <MainLogo/>
         </a>
         <div class="links">
-            <NavLink :text="link.text" :link="link.link" v-for="(link, index) in links" :key="index"/>
+            <NavLink v-for="(link, index) in links" :key="index"
+                :text="link.text"
+                :link="link.link"/>
         </div>
     </div>
 </template>
@@ -28,6 +30,7 @@ export default {
     },
     data() {
         return {
+            current: undefined,
             initialHeight: 0,
             initialPosition: true,
             home: {

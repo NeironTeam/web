@@ -36,7 +36,7 @@ export default {
                 },
                 {
                     title: "Community",
-                    icon: "icon-chemistry",
+                    icon: "icon-globe",
                     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus laoreet est, sed consectetur mi pulvinar vitae.",
                     background: "linear-gradient(45deg, #427867 0%, #58AB99 100%)",
                 },

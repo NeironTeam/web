@@ -1,5 +1,9 @@
 <template>
-    <a class="nav-link" href="#" v-scroll-to="link">{{text}}</a>
+    <a class="nav-link" 
+        href="#" 
+        v-scroll-to="link">
+            {{ text }}
+    </a>
 </template>
 
 <script>
@@ -8,7 +12,7 @@ export default {
     props: {
         text: String,
         link: String,
-    },
+    }
 };
 </script>
 
