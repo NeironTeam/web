@@ -92,13 +92,13 @@ export default {
 @media only screen and (max-width: 978px) {
     .person {
         width: 35%;
-        margin-top: 8vw;
+        margin-top: 12vw;
     }
 }
 @media only screen and (max-width: 650px) {
     .person {
         width: 80%;
-        margin-top: 20vw;
+        margin-top: 32vw;
     }
 }
 </style>

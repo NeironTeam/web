@@ -170,7 +170,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1 {
-    font-size: 10rem;
+    font-size: 10vw;
     padding: 50px 0px 0px 100px;
 }
 .profiles {
@@ -189,7 +189,21 @@ h1 {
     background-position: center;
     background-size: cover;
     color: white;
-    font-size: 8vw;
     padding-bottom: 15vh;
+}
+@media only screen and (max-width: 1300px) {
+    h1 {
+        font-size: 8vw;
+    }
+}
+@media only screen and (max-width: 978px) {
+    h1 {
+        font-size: 10vw;
+    }
+}
+@media only screen and (max-width: 650px) {
+    h1 {
+        font-size: 12vw;
+    }
 }
 </style>
