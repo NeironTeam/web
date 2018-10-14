@@ -14,6 +14,11 @@ import ArrowIcon from "./ArrowIcon.vue"
 
 export default {
     name: "Mouse",
+    mounted() {
+        window.addEventListener("scroll", event => {
+            this.$el.style.opacity = 1 - event.pageY / 250
+        });
+    },
     components: {
         MouseIcon,
         ArrowIcon
