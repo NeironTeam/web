@@ -5,6 +5,7 @@
             <Person
             :name="person.name"
             :img="person.img"
+            :position="person.position"
             :description="person.description"
             v-for="(person, index) in persons"
             :key="index"/>
@@ -23,24 +24,28 @@ export default {
             persons: [
                 {
                     name: "Pepe",
+                    position: "Data Scientist",
                     description:
                         "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
                     img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
                 },
                 {
                     name: "Pepe",
+                    position: "Data Scientist",
                     description:
                         "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
                     img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
                 },
                 {
                     name: "Pepe",
+                    position: "Data Scientist",
                     description:
                         "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
                     img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
                 },
                 {
                     name: "Pepe",
+                    position: "Data Scientist",
                     description:
                         "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
                     img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
