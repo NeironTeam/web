@@ -6,10 +6,12 @@
         <WhatSection v-scroll-reveal="{ delay: 100 }" id="what" title="What is neiron dev?"/>
         <WhoSection v-scroll-reveal="{ delay: 100 }" id="who" title="Who?"/>
         <Separator/>
-        <HowSection id="how" 
-            title="How we can help you?" 
+        <HowSection id="how"
+            title="How we can help you?"
             background-text="how?"/>
+        <WhereSection id="where"/>
         <ContactSection v-scroll-reveal="{ delay: 100 }"/>
+
     </div>
 </template>
 
@@ -21,7 +23,7 @@ import WhoSection from "./components/WhoSection";
 import HowSection from "./components/HowSection";
 import ContactSection from "./components/ContactSection";
 import Separator from "./components/Separator";
-
+import WhereSection from "./components/WhereSection";
 
 export default {
     name: "App",
@@ -32,7 +34,8 @@ export default {
         WhoSection,
         Separator,
         HowSection,
-        ContactSection
+        ContactSection,
+        WhereSection,
     },
 };
 </script>

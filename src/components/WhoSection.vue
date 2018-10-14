@@ -3,7 +3,7 @@
         <h1>{{title}}</h1>
         <div class="profiles">
             <Person
-            v-scroll-reveal.reset="{ delay: 600*index }"
+            v-scroll-reveal="{ delay: 600*index }"
             :name="person.name"
             :img="person.img"
             :position="person.position"
@@ -48,7 +48,7 @@ export default {
                         },
                         {
                             text: "GitHub",
-                            icon: "icon-book-open",
+                            icon: "devicon-github-plain",
                             link: "twitter.com",
                             styles: {
                                 backgroundColor: "#4536DB",
@@ -81,7 +81,7 @@ export default {
                         },
                         {
                             text: "GitHub",
-                            icon: "icon-book-open",
+                            icon: "devicon-github-plain",
                             link: "twitter.com",
                             styles: {
                                 backgroundColor: "#4536DB",
@@ -114,7 +114,7 @@ export default {
                         },
                         {
                             text: "GitHub",
-                            icon: "icon-book-open",
+                            icon: "devicon-github-plain",
                             link: "twitter.com",
                             styles: {
                                 backgroundColor: "#4536DB",
@@ -147,7 +147,7 @@ export default {
                         },
                         {
                             text: "GitHub",
-                            icon: "icon-book-open",
+                            icon: "devicon-github-plain",
                             link: "twitter.com",
                             styles: {
                                 backgroundColor: "#4536DB",
@@ -169,7 +169,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1{
+h1 {
     font-size: 10rem;
     padding: 50px 0px 0px 100px;
 }

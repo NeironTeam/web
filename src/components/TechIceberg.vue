@@ -1,53 +1,53 @@
 <style scoped>
-    .iceberg {
-        display: inline-block;
-        vertical-align: top;
-        width: 100%;
-        height: auto;
-        text-align: center;
-    }
+.iceberg {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
 
-    .iceberg .techs {
-        display: inline-block;
-        position: relative;
-        vertical-align: top;
-        width: 100%;
+.iceberg .techs {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 100%;
 
-        display: flex;
-        justify-content: space-around;
-        align-content: center;
-    }
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
 
-    .iceberg .techs .tech {
-        display: inline-block;
-        
-        color: black;
-        font-size: 10vh;
-        z-index: 1;
-    }
+.iceberg .techs .tech {
+    display: inline-block;
 
-    .iceberg .techs .graphic {
-        display: inline-block;
-        vertical-align: top;
-        position: absolute;
-        width: 100%;
-        height: auto;
-        z-index: 0;
-    }
+    color: black;
+    font-size: 10vh;
+    z-index: 1;
+}
 
-    .iceberg .techs .graphic#graphic-top {
-        bottom: 0;
-        left: 12.5%;
-        width: 75%;
-        margin-bottom: 10%;
-    }
+.iceberg .techs .graphic {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
 
-    .iceberg .techs .graphic#graphic-bottom {
-        top: 0;
-        left: 0;
-        width: 100%;
-        margin-top: 10%;
-    }
+.iceberg .techs .graphic#graphic-top {
+    bottom: 0;
+    left: 12.5%;
+    width: 75%;
+    margin-bottom: 10%;
+}
+
+.iceberg .techs .graphic#graphic-bottom {
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 10%;
+}
 </style>
 
 <template>
@@ -110,8 +110,8 @@ export default {
     props: {
         technologies: {
             type: Object,
-            required: true
-        }
-    }
-}
+            required: true,
+        },
+    },
+};
 </script>
