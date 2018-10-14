@@ -1,3 +1,31 @@
+<style scoped>
+    .navbar {
+        display: inline-block;
+        vertical-align: top;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%;
+        z-index: 1;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2vh 3vw;
+    }
+
+    .navbar .links {
+        display: inline-block;
+        vertical-align: top;
+        transition: all .2s ease-in-out;
+    }
+
+    .navbar.scrolled .links {
+        background: white;
+        border-radius: 100px;
+        box-shadow: 10px 10px 60px -20px rgba(0,0,0,0.75);
+    }
+</style>
+
 <template>
     <div class="navbar" :class="{ 'scrolled': !initialPosition }">
         <a :href="home.link" v-scroll-to="home.link">
@@ -101,31 +129,3 @@ export default {
     },
 };
 </script>
-
-<style>
-    .navbar {
-        display: inline-block;
-        vertical-align: top;
-        position: fixed;
-        top: 0; left: 0;
-        width: 100%;
-        z-index: 1;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2vh 3vw;
-    }
-
-    .navbar .links {
-        display: inline-block;
-        vertical-align: top;
-        transition: all .2s ease-in-out;
-    }
-
-    .navbar.scrolled .links {
-        background: white;
-        border-radius: 100px;
-        box-shadow: 10px 10px 60px -20px rgba(0,0,0,0.75);
-    }
-</style>

@@ -1,25 +1,4 @@
-<template>
-    <a class="nav-link"
-        :class="{ 'active': active }"
-        href="#" 
-        v-scroll-to="link">
-            {{ text }}
-    </a>
-</template>
-
-<script>
-export default {
-    name: "NavLink",
-    props: {
-        text: String,
-        link: String,
-        active: Boolean
-    },
-    immediate: true
-};
-</script>
-
-<style>
+<style scoped>
 .nav-link {
     display: inline-block;
     vertical-align: top;
@@ -43,7 +22,26 @@ export default {
 .nav-link:active,
 .nav-link.active { color: #000; }
 
-.nav-link:hover:after, 
-.nav-link:active:after,
 .nav-link.active:after { color: #000; }
 </style>
+
+<template>
+    <a class="nav-link"
+        :class="{ 'active': active }"
+        href="#" 
+        v-scroll-to="link">
+            {{ text }}
+    </a>
+</template>
+
+<script>
+export default {
+    name: "NavLink",
+    props: {
+        text: String,
+        link: String,
+        active: Boolean
+    },
+    immediate: true
+};
+</script>

@@ -5,6 +5,9 @@
         <Index id="index"/>
         <WhatSection id="what" title="What is neiron dev?"/>
         <WhoSection/>
+        <HowSection id="how" 
+            title="How we can help you?" 
+            background-text="how?"/>
     </div>
 </template>
 
@@ -13,6 +16,7 @@ import NavBar from "./components/NavBar";
 import Index from "./components/Index";
 import WhatSection from "./components/WhatSection";
 import WhoSection from "./components/WhoSection";
+import HowSection from "./components/HowSection";
 
 export default {
     name: "App",
@@ -21,6 +25,7 @@ export default {
         Index,
         WhatSection,
         WhoSection,
+        HowSection,
     },
 };
 </script>
@@ -28,6 +33,8 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css");
+@import url("https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css");
+
 * {
     margin: 0;
     padding: 0;

@@ -1,58 +1,4 @@
-<template>
-    <div>
-        <div class="section-content">
-            <h3 class="title">{{ title }}</h3>
-
-            <div class="section-box-group">
-                <div class="section-box"
-                    v-for="(section, index) in sections" :key="index"
-                    :style="{ background: section.background }">
-                        <i class="box-icon" :class="section.icon"></i>
-                        <h4 class="box-title">{{ section.title }}</h4>
-                        <p class="box-content">{{ section.content }}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</template>
-
-<script>
-export default {
-    name: "WhatSection",
-    props: {
-        title: {
-            type: String,
-            default: true
-        }
-    },
-    data() {
-        return {
-            sections: [
-                {
-                    title: "Formation",
-                    icon: "icon-rocket",
-                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus laoreet est, sed consectetur mi pulvinar vitae.",
-                    background: "linear-gradient(45deg, #1D1E2C 0%, #59656F 100%)",
-                },
-                {
-                    title: "Community",
-                    icon: "icon-globe",
-                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus laoreet est, sed consectetur mi pulvinar vitae.",
-                    background: "linear-gradient(45deg, #427867 0%, #58AB99 100%)",
-                },
-                {
-                    title: "Development",
-                    icon: "icon-bulb",
-                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus laoreet est, sed consectetur mi pulvinar vitae.",
-                    background: "linear-gradient(45deg, #FFAA5A 0%, #FF785A 100%)",
-                },
-            ]
-        }
-    }
-}
-</script>
-
-<style>
+<style scoped>
     .section-content {
         display: inline-block;
         vertical-align: top;
@@ -143,3 +89,56 @@ export default {
     }
 </style>
 
+<template>
+    <div>
+        <div class="section-content">
+            <h3 class="title">{{ title }}</h3>
+
+            <div class="section-box-group">
+                <div class="section-box"
+                    v-for="(section, index) in sections" :key="index"
+                    :style="{ background: section.background }">
+                        <i class="box-icon" :class="section.icon"></i>
+                        <h4 class="box-title">{{ section.title }}</h4>
+                        <p class="box-content">{{ section.content }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: "WhatSection",
+    props: {
+        title: {
+            type: String,
+            default: true
+        }
+    },
+    data() {
+        return {
+            sections: [
+                {
+                    title: "Formation",
+                    icon: "icon-rocket",
+                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus laoreet est, sed consectetur mi pulvinar vitae.",
+                    background: "linear-gradient(45deg, #1D1E2C 0%, #59656F 100%)",
+                },
+                {
+                    title: "Community",
+                    icon: "icon-globe",
+                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus laoreet est, sed consectetur mi pulvinar vitae.",
+                    background: "linear-gradient(45deg, #427867 0%, #58AB99 100%)",
+                },
+                {
+                    title: "Development",
+                    icon: "icon-bulb",
+                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus laoreet est, sed consectetur mi pulvinar vitae.",
+                    background: "linear-gradient(45deg, #FFAA5A 0%, #FF785A 100%)",
+                },
+            ]
+        }
+    }
+}
+</script>
