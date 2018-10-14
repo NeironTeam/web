@@ -2,6 +2,7 @@
     <div class="person">
         <RoundImage :img="img"/>
         <h2 class="name">{{name}}</h2>
+        <h4 class="position">{{position}}</h4>
         <p class="description">{{description}}</p>
         <div class="social-links">
             <SocialLink
@@ -57,6 +58,10 @@ export default {
             type: String,
             required: true,
         },
+        position: {
+            type: String,
+            required: true,
+        },
     },
     components: {
         RoundImage,
@@ -79,6 +84,13 @@ export default {
     position: relative;
     bottom: 12%;
     padding: 1em;
+    color: #353535;
+}
+.position {
+    text-align: center;
+    position: relative;
+    bottom: 12%;
+    padding: 0.5em;
     color: #353535;
 }
 .name {
