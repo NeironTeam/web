@@ -1,5 +1,6 @@
 <template>
-    <a class="nav-link" 
+    <a class="nav-link"
+        :class="{ 'active': active }"
         href="#" 
         v-scroll-to="link">
             {{ text }}
@@ -12,7 +13,9 @@ export default {
     props: {
         text: String,
         link: String,
-    }
+        active: Boolean
+    },
+    immediate: true
 };
 </script>
 
