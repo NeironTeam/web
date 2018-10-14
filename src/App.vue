@@ -5,6 +5,7 @@
         <Index id="index"/>
         <WhatSection v-scroll-reveal="{ delay: 100 }" id="what" title="What is neiron dev?"/>
         <WhoSection v-scroll-reveal="{ delay: 100 }" id="who" title="Who?"/>
+        <Separator/>
         <HowSection id="how" 
             title="How we can help you?" 
             background-text="how?"/>
@@ -19,6 +20,8 @@ import WhatSection from "./components/WhatSection";
 import WhoSection from "./components/WhoSection";
 import HowSection from "./components/HowSection";
 import ContactSection from "./components/ContactSection";
+import Separator from "./components/Separator";
+
 
 export default {
     name: "App",
@@ -27,6 +30,7 @@ export default {
         Index,
         WhatSection,
         WhoSection,
+        Separator,
         HowSection,
         ContactSection
     },

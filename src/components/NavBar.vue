@@ -5,7 +5,7 @@
         position: fixed;
         top: 0; left: 0;
         width: 100%;
-        z-index: 1;
+        z-index: 10;
 
         display: flex;
         justify-content: space-between;
@@ -51,7 +51,7 @@ export default {
         this.initialHeight = window.innerHeight;
 
         window.addEventListener("scroll", this.scrolling);
-        
+
         this.links.forEach((link, index) => {
             let id = link.link;
             let el = document.querySelector(id);

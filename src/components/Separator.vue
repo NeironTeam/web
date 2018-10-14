@@ -1,0 +1,29 @@
+<template>
+    <div>
+    </div>
+</template>
+
+<script>
+
+export default {
+    name: "Separator",
+    components: {
+    }
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+    div{
+        position: relative;
+        width: 100vw;
+        height: 30vh;
+        background: linear-gradient(180deg, rgba(228,151,110,0) 0% , rgba(228,151,110,1) 40%,rgba(157,205,203,1) 86%, rgba(157,205,203,0.0) 100%);
+        padding-top: 12vh;
+        margin-top: -12vh;
+        padding-bottom: 5vh;
+        margin-bottom: -5vh;
+        z-index: 2;
+    }
+
+</style>

@@ -13,7 +13,6 @@
             :key="index"/>
         </div>
     </div>
-
 </template>
 
 <script>
@@ -184,6 +183,7 @@ h1{
     bottom: 10%;
     margin-top: 8vw;
 }
+
 #who {
     background-image: url("../assets/FondoWho.jpg");
     background-position: center;

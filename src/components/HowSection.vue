@@ -6,7 +6,7 @@
         width: 100%;
         height: auto;
         min-height: 100vh;
-        margin: 20vh 0 20vh;
+        margin: 0vh 0 20vh;
         padding: 160px 5vw 5vh;
         background-image: url('../assets/how-background.jpg');
         background-position: center;
