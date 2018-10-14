@@ -22,11 +22,8 @@ import NavBar from "./components/NavBar";
 import Index from "./components/Index";
 import WhatSection from "./components/WhatSection";
 import WhoSection from "./components/WhoSection";
-<<<<<<< HEAD
 import HowSection from "./components/HowSection";
-=======
 import ContactSection from "./components/ContactSection";
->>>>>>> 682a6f2d22d3f971546b391e4abf32e54f9bf77b
 
 export default {
     name: "App",
