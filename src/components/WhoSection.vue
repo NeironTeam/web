@@ -190,5 +190,6 @@ h1{
     background-size: cover;
     color: white;
     font-size: 8vw;
+    padding-bottom: 15vh;
 }
 </style>

@@ -16,14 +16,11 @@ export default {
 <style scoped>
     div{
         position: relative;
-        width: 100vw;
-        height: 30vh;
+        width: 100%;
+        height: 50vh;
         background: linear-gradient(180deg, rgba(228,151,110,0) 0% , rgba(228,151,110,1) 40%,rgba(157,205,203,1) 86%, rgba(157,205,203,0.0) 100%);
-        padding-top: 12vh;
-        margin-top: -12vh;
-        padding-bottom: 5vh;
-        margin-bottom: -5vh;
-        z-index: 2;
+        margin: -20vh 0;
+        z-index: 1;
     }
 
 </style>
