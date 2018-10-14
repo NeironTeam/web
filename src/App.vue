@@ -5,6 +5,7 @@
         <Index id="index"/>
         <WhatSection id="what" title="What is neiron dev?"/>
         <WhoSection id="who" title="Who?"/>
+        <ContactSection/>
     </div>
 </template>
 
@@ -13,6 +14,7 @@ import NavBar from "./components/NavBar";
 import Index from "./components/Index";
 import WhatSection from "./components/WhatSection";
 import WhoSection from "./components/WhoSection";
+import ContactSection from "./components/ContactSection";
 
 export default {
     name: "App",
@@ -21,6 +23,7 @@ export default {
         Index,
         WhatSection,
         WhoSection,
+        ContactSection
     },
 };
 </script>
