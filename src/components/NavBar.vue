@@ -1,10 +1,14 @@
 <template>
     <div class="navbar" :class="{ 'scrolled': !initialPosition }">
-        <a href="#" v-scroll-to="'#index'">
+        <a :href="home.link" v-scroll-to="home.link">
             <MainLogo/>
         </a>
         <div class="links">
-            <NavLink :text="link.text" :link="link.link" v-for="(link, index) in links" :key="index"/>
+            <NavLink v-for="(link, index) in links" :key="index"
+                :href="link.link"
+                :text="link.text"
+                :link="link.link"
+                :active="link.active"/>
         </div>
     </div>
 </template>
@@ -15,52 +19,81 @@ import NavLink from "./NavLink";
 
 export default {
     name: "NavBar",
-    created() {
-        this.initialHeight = Math.max(
-            document.body.scrollHeight,
-            document.body.offsetHeight, 
-            document.documentElement.clientHeight, 
-            document.documentElement.scrollHeight, 
-            document.documentElement.offsetHeight
-        );
+    mounted() {
+        this.initialHeight = window.innerHeight;
 
-        window.addEventListener("scroll", this.updateClass);
+        window.addEventListener("scroll", this.scrolling);
+        
+        this.links.forEach((link, index) => {
+            let id = link.link;
+            let el = document.querySelector(id);
+            if (el !== null) {
+                let [ start, end ] = this.getPosition(el);
+                this.sections.push({ id, el, start, end, index });
+            }
+        });
     },
     data() {
         return {
+            current: undefined,
             initialHeight: 0,
             initialPosition: true,
+            sections: [],
             home: {
-                link: "home"
+                link: "#index"
             },
             links: [
                 {
                     text: "What",
                     link: "#what",
+                    active: false
                 },
                 {
                     text: "Who",
                     link: "#who",
+                    active: false
                 },
                 {
                     text: "How",
-                    link: "#how"
+                    link: "#how",
+                    active: false
                 },
                 {
                     text: "Where",
                     link: "#where",
+                    active: false
                 },
             ],
         };
     },
     methods: {
-        updateClass(event) {
-            let current = Math.max( 
-                document.documentElement.scrollTop, 
-                document.body.scrollTop
-            );
+        scrolling(e) {
+            let now = {
+                start: Math.ceil(document.documentElement.scrollTop + 5), 
+                end: Math.ceil(document.documentElement.scrollTop) + this.initialHeight
+            };
 
-            this.initialPosition = current <= this.initialHeight;
+            this.updateClass(now);
+            this.checkCurrentLink(now);
+        },
+        updateClass(now) {
+            this.initialPosition = now.start <= this.initialHeight;
+        },
+        checkCurrentLink(now) {
+            this.sections.forEach(section => this.checkSectionBoundary(now, section) );
+        },
+        getPosition(el) {
+            return [
+                el.offsetTop,
+                el.offsetTop + el.offsetHeight
+            ]
+        },
+        checkSectionBoundary(now, section) {
+            let current =   ( now.start < section.start && now.end > section.end ) ||
+                            ( now.start > section.start && now.end < section.end ) ||
+                            ( now.start > section.start && now.end > section.end );
+
+            this.links[section.index].active = current;
         }
     },
     components: {
@@ -75,8 +108,7 @@ export default {
         display: inline-block;
         vertical-align: top;
         position: fixed;
-        top: 0;
-        left: 0;
+        top: 0; left: 0;
         width: 100%;
         z-index: 1;
 

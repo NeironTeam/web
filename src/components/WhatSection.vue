@@ -7,8 +7,9 @@
                 <div class="section-box"
                     v-for="(section, index) in sections" :key="index"
                     :style="{ background: section.background }">
-                    <h4 class="box-title">{{ section.title }}</h4>
-                    <p class="box-content">{{ section.content }}</p>
+                        <i class="box-icon" :class="section.icon"></i>
+                        <h4 class="box-title">{{ section.title }}</h4>
+                        <p class="box-content">{{ section.content }}</p>
                 </div>
             </div>
         </div>
@@ -29,16 +30,19 @@ export default {
             sections: [
                 {
                     title: "Formation",
+                    icon: "icon-rocket",
                     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus laoreet est, sed consectetur mi pulvinar vitae.",
                     background: "linear-gradient(45deg, #1D1E2C 0%, #59656F 100%)",
                 },
                 {
                     title: "Community",
+                    icon: "icon-globe",
                     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus laoreet est, sed consectetur mi pulvinar vitae.",
                     background: "linear-gradient(45deg, #427867 0%, #58AB99 100%)",
                 },
                 {
                     title: "Development",
+                    icon: "icon-bulb",
                     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus laoreet est, sed consectetur mi pulvinar vitae.",
                     background: "linear-gradient(45deg, #FFAA5A 0%, #FF785A 100%)",
                 },
@@ -85,6 +89,7 @@ export default {
     .section-content .section-box-group .section-box {
         display: inline-block;
         vertical-align: top;
+        position: relative;
         width: 28%;
         height: auto;
         min-height: 40vh;
@@ -94,6 +99,14 @@ export default {
         color: white;
         border-radius: .8vh;
         box-shadow: 10px 20px 80px -10px rgba(0,0,0,0.75);
+    }
+
+    .section-content .section-box-group .section-box .box-icon {
+        position: absolute;
+        bottom: 2vh;
+        right: 1vw;
+        font-size: 10vh;
+        opacity: 0.3;
     }
 
     .section-content .section-box-group .section-box .box-title {
