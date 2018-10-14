@@ -29,7 +29,7 @@
 <template>
     <div class="navbar" :class="{ 'scrolled': !initialPosition }">
         <a :href="home.link" v-scroll-to="home.link">
-            <MainLogo/>
+            <!-- <MainLogo/> -->
         </a>
         <div class="links">
             <NavLink v-for="(link, index) in links" :key="index"

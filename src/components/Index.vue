@@ -1,17 +1,17 @@
 <template>
     <div class="outter">
         <div class="inner">
-            <div class="logo">
+            <div  v-scroll-reveal="{ delay: 600,duration: 1000, scale: 100 }" class="logo">
                 <Logo/>
             </div>
-            <h1 class="title">
+            <h1 v-scroll-reveal="{ delay: 600,duration: 1000, scale: 100 }" class="title">
                 neiron
-                <small>dev</small>
+                <small v-scroll-reveal="{ delay: 1600 }" >dev</small>
             </h1>
-            <h2 class="subtitle">Tabulamos con espacios</h2>
+            <h2 class="subtitle" v-scroll-reveal="{ delay: 2000 }">Tabulamos con espacios</h2>
         </div>
 
-        <Mouse class="mouse"/>
+        <Mouse v-scroll-reveal="{ delay: 2000 }" class="mouse"/>
     </div>
 </template>
 

@@ -68,9 +68,9 @@
         animation: glitch3 2.5s infinite;
     }
 
-    .glitch:hover {
+    /* .glitch:hover {
         cursor: pointer;
-    }
+    } */
 
     @keyframes glitch1 {
     0% {
