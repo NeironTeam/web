@@ -71,6 +71,7 @@ export default {
     display: inline-block;
     width: 20%;
     margin: 3rem 2rem;
+    background-color: white;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .description {
@@ -78,17 +79,23 @@ export default {
     position: relative;
     bottom: 12%;
     padding: 1em;
+    color: #353535;
 }
 .name {
     text-align: center;
     margin-bottom: 1em;
     color: #353535;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 .social-links {
     text-align: center;
     position: relative;
     bottom: 14%;
+}
+@media only screen and (max-width: 1300px) {
+    .person {
+        width: 25%;
+    }
 }
 @media only screen and (max-width: 978px) {
     .person {

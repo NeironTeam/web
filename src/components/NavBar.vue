@@ -35,7 +35,6 @@ export default {
     },
     data() {
         return {
-            current: undefined,
             initialHeight: 0,
             initialPosition: true,
             sections: [],
@@ -69,7 +68,7 @@ export default {
     methods: {
         scrolling(e) {
             let now = {
-                start: Math.ceil(document.documentElement.scrollTop + 5), 
+                start: Math.ceil(document.documentElement.scrollTop), 
                 end: Math.ceil(document.documentElement.scrollTop) + this.initialHeight
             };
 
@@ -89,9 +88,9 @@ export default {
             ]
         },
         checkSectionBoundary(now, section) {
-            let current =   ( now.start < section.start && now.end > section.end ) ||
-                            ( now.start > section.start && now.end < section.end ) ||
-                            ( now.start > section.start && now.end > section.end );
+            let current =   ( now.start < section.start && now.end >= section.end ) ||
+                            ( now.start >= section.start && now.end < section.end ) ||
+                            ( now.start >= section.start && now.end >= section.end && now.start < section.end );
 
             this.links[section.index].active = current;
         }

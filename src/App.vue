@@ -4,7 +4,7 @@
         <NavBar/>
         <Index id="index"/>
         <WhatSection id="what" title="What is neiron dev?"/>
-        <WhoSection/>
+        <WhoSection id="who" title="Who?"/>
         <ContactSection/>
     </div>
 </template>
