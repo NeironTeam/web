@@ -3,11 +3,17 @@
     <div id="app">
         <NavBar/>
         <Index id="index"/>
+<<<<<<< HEAD
         <WhatSection id="what" title="What is neiron dev?"/>
         <WhoSection/>
         <HowSection id="how" 
             title="How we can help you?" 
             background-text="how?"/>
+=======
+        <WhatSection v-scroll-reveal="{ delay: 100 }" id="what" title="What is neiron dev?"/>
+        <WhoSection v-scroll-reveal="{ delay: 100 }" id="who" title="Who?"/>
+        <ContactSection v-scroll-reveal="{ delay: 100 }"/>
+>>>>>>> 682a6f2d22d3f971546b391e4abf32e54f9bf77b
     </div>
 </template>
 
@@ -16,7 +22,11 @@ import NavBar from "./components/NavBar";
 import Index from "./components/Index";
 import WhatSection from "./components/WhatSection";
 import WhoSection from "./components/WhoSection";
+<<<<<<< HEAD
 import HowSection from "./components/HowSection";
+=======
+import ContactSection from "./components/ContactSection";
+>>>>>>> 682a6f2d22d3f971546b391e4abf32e54f9bf77b
 
 export default {
     name: "App",
@@ -26,6 +36,7 @@ export default {
         WhatSection,
         WhoSection,
         HowSection,
+        ContactSection
     },
 };
 </script>
@@ -46,4 +57,10 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
 }
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
 </style>

@@ -1,11 +1,13 @@
 <template>
-    <div :style="styles" class="btn-round">
+    <div :style="styles" class="btn-round img__wrap">
         <a
             :class="icon"
-            class="social-link"
+            class="social-link img__img"
             :href="link">
-            {{text}}
         </a>
+        <div class="img__description_layer">
+            <p class="img__description">{{text}}</p>
+        </div>
     </div>
 
 </template>
@@ -60,5 +62,40 @@ export default {
     width: 100%;
     text-align: center;
     color: #fff;
+}
+.img__wrap {
+    position: relative;
+}
+
+.img__description_layer {
+    position: absolute;
+    top: -6.5em;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: rgb(0, 0, 0);
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5em;
+
+    /* transition effect. not necessary */
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.img__wrap:hover .img__description_layer {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img__description {
+    transition: 0.2s;
+    transform: translateY(1em);
+}
+
+.img__wrap:hover .img__description {
+    transform: translateY(0);
 }
 </style>

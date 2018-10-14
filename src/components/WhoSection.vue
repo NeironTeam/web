@@ -1,10 +1,14 @@
 <template>
-    <div id="who">
+    <div>
+        <h1>{{title}}</h1>
         <div class="profiles">
             <Person
+            v-scroll-reveal.reset="{ delay: 600*index }"
             :name="person.name"
             :img="person.img"
+            :position="person.position"
             :description="person.description"
+            :socialNetworks="person.socialNetworks"
             v-for="(person, index) in persons"
             :key="index"/>
         </div>
@@ -22,30 +26,141 @@ export default {
             persons: [
                 {
                     name: "Pepe",
+                    position: "Data Scientist",
                     description:
                         "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
                     img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
+                    socialNetworks: [
+                        {
+                            text: "Twiter",
+                            icon: "icon-social-twitter",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#DB36DB",
+                            },
+                        },
+                        {
+                            text: "Linkdin",
+                            icon: "icon-book-open",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#4536DB",
+                            },
+                        },
+                        {
+                            text: "GitHub",
+                            icon: "icon-book-open",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#4536DB",
+                            },
+                        },
+                    ],
                 },
                 {
                     name: "Pepe",
+                    position: "Data Scientist",
                     description:
                         "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
                     img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
+                    socialNetworks: [
+                        {
+                            text: "Twiter",
+                            icon: "icon-social-twitter",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#DB36DB",
+                            },
+                        },
+                        {
+                            text: "Linkdin",
+                            icon: "icon-book-open",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#4536DB",
+                            },
+                        },
+                        {
+                            text: "GitHub",
+                            icon: "icon-book-open",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#4536DB",
+                            },
+                        },
+                    ],
                 },
                 {
                     name: "Pepe",
+                    position: "Data Scientist",
                     description:
                         "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
                     img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
+                    socialNetworks: [
+                        {
+                            text: "Twiter",
+                            icon: "icon-social-twitter",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#DB36DB",
+                            },
+                        },
+                        {
+                            text: "Linkdin",
+                            icon: "icon-book-open",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#4536DB",
+                            },
+                        },
+                        {
+                            text: "GitHub",
+                            icon: "icon-book-open",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#4536DB",
+                            },
+                        },
+                    ],
                 },
                 {
                     name: "Pepe",
+                    position: "Data Scientist",
                     description:
                         "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
                     img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
+                    socialNetworks: [
+                        {
+                            text: "Twiter",
+                            icon: "icon-social-twitter",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#DB36DB",
+                            },
+                        },
+                        {
+                            text: "Linkdin",
+                            icon: "icon-book-open",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#4536DB",
+                            },
+                        },
+                        {
+                            text: "GitHub",
+                            icon: "icon-book-open",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#4536DB",
+                            },
+                        },
+                    ],
                 },
             ],
         };
+    },
+    props: {
+        title: String,
     },
     components: {
         Person,
@@ -60,7 +175,16 @@ export default {
     margin: auto;
     position: relative;
     text-align: center;
-    height: 100vh;
+    height: 50%;
+    font-size: 1rem;
+    bottom: 10%;
+    margin-top: 8vw;
+}
+#who {
     background-image: url("../assets/FondoWho.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-size: 8vw;
 }
 </style>
