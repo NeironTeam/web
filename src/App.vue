@@ -3,17 +3,12 @@
     <div id="app">
         <NavBar/>
         <Index id="index"/>
-<<<<<<< HEAD
-        <WhatSection id="what" title="What is neiron dev?"/>
-        <WhoSection/>
+        <WhatSection v-scroll-reveal="{ delay: 100 }" id="what" title="What is neiron dev?"/>
+        <WhoSection v-scroll-reveal="{ delay: 100 }" id="who" title="Who?"/>
         <HowSection id="how" 
             title="How we can help you?" 
             background-text="how?"/>
-=======
-        <WhatSection v-scroll-reveal="{ delay: 100 }" id="what" title="What is neiron dev?"/>
-        <WhoSection v-scroll-reveal="{ delay: 100 }" id="who" title="Who?"/>
         <ContactSection v-scroll-reveal="{ delay: 100 }"/>
->>>>>>> 682a6f2d22d3f971546b391e4abf32e54f9bf77b
     </div>
 </template>
 

@@ -170,6 +170,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+h1{
+    font-size: 10rem;
+    padding: 50px 0px 0px 100px;
+}
 .profiles {
     display: block;
     margin: auto;
