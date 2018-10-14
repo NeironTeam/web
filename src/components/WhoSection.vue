@@ -7,6 +7,7 @@
             :img="person.img"
             :position="person.position"
             :description="person.description"
+            :socialNetworks="person.socialNetworks"
             v-for="(person, index) in persons"
             :key="index"/>
         </div>
@@ -28,6 +29,32 @@ export default {
                     description:
                         "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
                     img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
+                    socialNetworks: [
+                        {
+                            text: "Twiter",
+                            icon: "icon-social-twitter",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#DB36DB",
+                            },
+                        },
+                        {
+                            text: "Linkdin",
+                            icon: "icon-book-open",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#4536DB",
+                            },
+                        },
+                        {
+                            text: "GitHub",
+                            icon: "icon-book-open",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#4536DB",
+                            },
+                        },
+                    ],
                 },
                 {
                     name: "Pepe",
@@ -35,6 +62,32 @@ export default {
                     description:
                         "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
                     img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
+                    socialNetworks: [
+                        {
+                            text: "Twiter",
+                            icon: "icon-social-twitter",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#DB36DB",
+                            },
+                        },
+                        {
+                            text: "Linkdin",
+                            icon: "icon-book-open",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#4536DB",
+                            },
+                        },
+                        {
+                            text: "GitHub",
+                            icon: "icon-book-open",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#4536DB",
+                            },
+                        },
+                    ],
                 },
                 {
                     name: "Pepe",
@@ -42,6 +95,32 @@ export default {
                     description:
                         "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
                     img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
+                    socialNetworks: [
+                        {
+                            text: "Twiter",
+                            icon: "icon-social-twitter",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#DB36DB",
+                            },
+                        },
+                        {
+                            text: "Linkdin",
+                            icon: "icon-book-open",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#4536DB",
+                            },
+                        },
+                        {
+                            text: "GitHub",
+                            icon: "icon-book-open",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#4536DB",
+                            },
+                        },
+                    ],
                 },
                 {
                     name: "Pepe",
@@ -49,6 +128,32 @@ export default {
                     description:
                         "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
                     img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
+                    socialNetworks: [
+                        {
+                            text: "Twiter",
+                            icon: "icon-social-twitter",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#DB36DB",
+                            },
+                        },
+                        {
+                            text: "Linkdin",
+                            icon: "icon-book-open",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#4536DB",
+                            },
+                        },
+                        {
+                            text: "GitHub",
+                            icon: "icon-book-open",
+                            link: "twitter.com",
+                            styles: {
+                                backgroundColor: "#4536DB",
+                            },
+                        },
+                    ],
                 },
             ],
         };
@@ -72,12 +177,13 @@ export default {
     height: 50%;
     font-size: 1rem;
     bottom: 10%;
+    margin-top: 8vw;
 }
 #who {
     background-image: url("../assets/FondoWho.jpg");
     background-position: center;
     background-size: cover;
     color: white;
-    font-size: 10vw;
+    font-size: 8vw;
 }
 </style>

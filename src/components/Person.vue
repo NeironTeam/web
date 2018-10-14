@@ -23,28 +23,6 @@ import RoundImage from "./RoundImage";
 
 export default {
     name: "Person",
-    data() {
-        return {
-            socialNetworks: [
-                {
-                    text: "",
-                    icon: "icon-social-twitter",
-                    link: "twitter.com",
-                    styles: {
-                        backgroundColor: "#DB36DB",
-                    },
-                },
-                {
-                    text: "",
-                    icon: "icon-social-twitter",
-                    link: "twitter.com",
-                    styles: {
-                        backgroundColor: "#4536DB",
-                    },
-                },
-            ],
-        };
-    },
     props: {
         name: {
             type: String,
@@ -62,6 +40,7 @@ export default {
             type: String,
             required: true,
         },
+        socialNetworks: Array,
     },
     components: {
         RoundImage,
@@ -75,7 +54,7 @@ export default {
 .person {
     display: inline-block;
     width: 20%;
-    margin: 3rem 2rem;
+    margin: 4rem 2rem;
     background-color: white;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
@@ -107,16 +86,19 @@ export default {
 @media only screen and (max-width: 1300px) {
     .person {
         width: 25%;
+        margin-top: 8vw;
     }
 }
 @media only screen and (max-width: 978px) {
     .person {
         width: 35%;
+        margin-top: 8vw;
     }
 }
 @media only screen and (max-width: 650px) {
     .person {
         width: 80%;
+        margin-top: 20vw;
     }
 }
 </style>
