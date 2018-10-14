@@ -3,6 +3,7 @@
         <h1>{{title}}</h1>
         <div class="profiles">
             <Person
+            v-scroll-reveal.reset="{ delay: 600*index }"
             :name="person.name"
             :img="person.img"
             :position="person.position"

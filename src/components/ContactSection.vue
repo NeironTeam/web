@@ -1,7 +1,7 @@
 <template>
     <div class="container center">
         <div class="glitch center" id="glitch">
-            <div>
+            <div v-scroll-reveal.reset="{ delay: 500, duration: 2000, scale: 200}">
                 <h2>IT'S THE END?</h2>
                 <h2 class="red">IT'S THE END?</h2>
                 <h2 class="green">IT'S THE END?</h2>

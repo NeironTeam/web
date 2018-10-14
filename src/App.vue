@@ -3,9 +3,9 @@
     <div id="app">
         <NavBar/>
         <Index id="index"/>
-        <WhatSection id="what" title="What is neiron dev?"/>
-        <WhoSection id="who" title="Who?"/>
-        <ContactSection/>
+        <WhatSection v-scroll-reveal="{ delay: 100 }" id="what" title="What is neiron dev?"/>
+        <WhoSection v-scroll-reveal="{ delay: 100 }" id="who" title="Who?"/>
+        <ContactSection v-scroll-reveal="{ delay: 100 }"/>
     </div>
 </template>
 
@@ -42,4 +42,10 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
 }
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
 </style>
