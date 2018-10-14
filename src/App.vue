@@ -3,6 +3,7 @@
         <NavBar/>
         <Index id="index"/>
         <WhatSection id="what" title="What is neiron dev?"/>
+        <ContactSection/>
     </div>
 </template>
 
@@ -10,13 +11,14 @@
 import NavBar from "./components/NavBar";
 import Index from "./components/Index";
 import WhatSection from "./components/WhatSection";
-
+import ContactSection from "./components/ContactSection"
 export default {
     name: "App",
     components: {
         NavBar,
         Index,
-        WhatSection
+        WhatSection,
+        ContactSection
     },
 };
 </script>
