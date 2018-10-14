@@ -1,5 +1,6 @@
 <template>
-    <div id="who">
+    <div>
+        <h1>{{title}}</h1>
         <div class="profiles">
             <Person
             :name="person.name"
@@ -47,6 +48,9 @@ export default {
             ],
         };
     },
+    props: {
+        title: String,
+    },
     components: {
         Person,
     },
@@ -60,7 +64,15 @@ export default {
     margin: auto;
     position: relative;
     text-align: center;
-    height: 100vh;
+    height: 50%;
+    font-size: 1rem;
+    bottom: 10%;
+}
+#who {
     background-image: url("../assets/FondoWho.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-size: 10vw;
 }
 </style>

@@ -19,13 +19,11 @@ export default {
 .image-cropper {
     width: 15vw;
     height: 15vw;
-    position: relative;
     overflow: hidden;
-    bottom: 40%;
     border-radius: 50%;
     display: block;
     margin: auto;
-    margin-top: -20%;
+    margin-top: -35%;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
