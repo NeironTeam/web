@@ -1,11 +1,13 @@
 <template>
-    <div id="who" class="profiles">
-        <Person
-        :name="person.name"
-        :img="person.img"
-        :description="person.description"
-        v-for="(person, index) in persons"
-        :key="index"/>
+    <div id="who">
+        <div class="profiles">
+            <Person
+            :name="person.name"
+            :img="person.img"
+            :description="person.description"
+            v-for="(person, index) in persons"
+            :key="index"/>
+        </div>
     </div>
 
 </template>
@@ -18,6 +20,12 @@ export default {
     data() {
         return {
             persons: [
+                {
+                    name: "Pepe",
+                    description:
+                        "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
+                    img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
+                },
                 {
                     name: "Pepe",
                     description:
@@ -52,5 +60,7 @@ export default {
     margin: auto;
     position: relative;
     text-align: center;
+    height: 100vh;
+    background-image: url("../assets/FondoWho.jpg");
 }
 </style>
