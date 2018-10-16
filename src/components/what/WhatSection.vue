@@ -1,4 +1,10 @@
 <style scoped>
+
+    .container{
+        height: 100vh;
+        width: 100%;
+    }
+
     .section-content {
         display: inline-block;
         vertical-align: top;
@@ -87,11 +93,12 @@
             padding: 3vh 3vw;
         }
     }
+
 </style>
 
 <template>
-    <div>
-        <div class="section-content">
+    <div class="container">
+        <div class="section-content" id="get-static">
             <h3 class="title">{{ title }}</h3>
 
             <div class="section-box-group">
@@ -116,6 +123,8 @@ export default {
             type: String,
             default: true
         }
+    },
+    mounted() {
     },
     data() {
         return {

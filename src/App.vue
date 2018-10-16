@@ -3,13 +3,15 @@
     <div id="app">
         <NavBar/>
         <Index id="index"/>
-        <WhatSection v-scroll-reveal="{ delay: 100 }" id="what" title="What is neiron dev?"/>
-        <WhoSection v-scroll-reveal="{ delay: 100 }" id="who" title="Who?"/>
+        <WhatSection v-scroll-reveal="{ delay: 500, distance: '0px' }" id="what" title="What is neiron dev?"/>
+        <WhoSection v-scroll-reveal="{ delay: 500, distance: '0px' }" id="who" title="Who?"/>
         <Separator/>
         <HowSection id="how"
             title="How we can help you?"
             background-text="how?"/>
-        <WhereSection id="where"/>
+        <WhereSection
+        v-scroll-reveal="{ delay: 500, distance: '0px' }"
+        id="where"/>
         <ContactSection v-scroll-reveal="{ delay: 100 }"/>
 
     </div>

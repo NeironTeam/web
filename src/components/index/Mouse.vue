@@ -16,8 +16,6 @@ export default {
     mounted() {
         window.addEventListener("scroll", event => {
             this.$el.style.opacity = 1 - window.scrollY / 250
-            console.log(window.scrollY)
-            console.log(this.$el.style.opacity)
         });
     },
     components: {

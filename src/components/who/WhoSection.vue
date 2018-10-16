@@ -35,7 +35,7 @@ export default {
                             icon: "icon-social-twitter",
                             link: "twitter.com",
                             styles: {
-                                backgroundColor: "#DB36DB",
+                                backgroundColor: "#00aced",
                             },
                         },
                         {
@@ -43,7 +43,7 @@ export default {
                             icon: "icon-book-open",
                             link: "twitter.com",
                             styles: {
-                                backgroundColor: "#4536DB",
+                                backgroundColor: "#0077B5",
                             },
                         },
                         {
@@ -51,7 +51,7 @@ export default {
                             icon: "devicon-github-plain",
                             link: "twitter.com",
                             styles: {
-                                backgroundColor: "#4536DB",
+                                backgroundColor: "#353535",
                             },
                         },
                     ],
@@ -68,7 +68,7 @@ export default {
                             icon: "icon-social-twitter",
                             link: "twitter.com",
                             styles: {
-                                backgroundColor: "#DB36DB",
+                                backgroundColor: "#00aced",
                             },
                         },
                         {
@@ -76,7 +76,7 @@ export default {
                             icon: "icon-book-open",
                             link: "twitter.com",
                             styles: {
-                                backgroundColor: "#4536DB",
+                                backgroundColor: "#0077B5",
                             },
                         },
                         {
@@ -84,7 +84,7 @@ export default {
                             icon: "devicon-github-plain",
                             link: "twitter.com",
                             styles: {
-                                backgroundColor: "#4536DB",
+                                backgroundColor: "#353535",
                             },
                         },
                     ],
@@ -101,7 +101,7 @@ export default {
                             icon: "icon-social-twitter",
                             link: "twitter.com",
                             styles: {
-                                backgroundColor: "#DB36DB",
+                                backgroundColor: "#00aced",
                             },
                         },
                         {
@@ -109,7 +109,7 @@ export default {
                             icon: "icon-book-open",
                             link: "twitter.com",
                             styles: {
-                                backgroundColor: "#4536DB",
+                                backgroundColor: "#0077B5",
                             },
                         },
                         {
@@ -117,7 +117,7 @@ export default {
                             icon: "devicon-github-plain",
                             link: "twitter.com",
                             styles: {
-                                backgroundColor: "#4536DB",
+                                backgroundColor: "#353535",
                             },
                         },
                     ],
@@ -134,7 +134,7 @@ export default {
                             icon: "icon-social-twitter",
                             link: "twitter.com",
                             styles: {
-                                backgroundColor: "#DB36DB",
+                                backgroundColor: "#00aced",
                             },
                         },
                         {
@@ -142,7 +142,7 @@ export default {
                             icon: "icon-book-open",
                             link: "twitter.com",
                             styles: {
-                                backgroundColor: "#4536DB",
+                                backgroundColor: "#0077B5",
                             },
                         },
                         {
@@ -150,7 +150,7 @@ export default {
                             icon: "devicon-github-plain",
                             link: "twitter.com",
                             styles: {
-                                backgroundColor: "#4536DB",
+                                backgroundColor: "#353535",
                             },
                         },
                     ],

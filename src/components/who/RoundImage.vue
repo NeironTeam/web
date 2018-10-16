@@ -23,7 +23,7 @@ export default {
     border-radius: 50%;
     display: block;
     margin: auto;
-    margin-top: -8vw;
+    margin-top: -9.5vw;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
