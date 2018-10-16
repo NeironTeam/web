@@ -17,13 +17,13 @@
 
 <script>
 import NavBar from "./components/NavBar";
-import Index from "./components/Index";
-import WhatSection from "./components/WhatSection";
-import WhoSection from "./components/WhoSection";
-import HowSection from "./components/HowSection";
-import ContactSection from "./components/ContactSection";
+import Index from "./components/index/Index";
+import WhatSection from "./components/what/WhatSection";
+import WhoSection from "./components/who/WhoSection";
+import HowSection from "./components/how/HowSection";
+import ContactSection from "./components/contact/ContactSection";
 import Separator from "./components/Separator";
-import WhereSection from "./components/WhereSection";
+import WhereSection from "./components/where/WhereSection";
 
 export default {
     name: "App",

@@ -1,7 +1,7 @@
 <template>
     <div class="content">
         <h3 class="title">Where we do neiron dev?</h3>
-        <div class="center">    
+        <div class="center">
             <div class="madrid"><svg version="1.1"
                 id="svg548" inkscape:output_extension="org.inkscape.output.svg.inkscape" inkscape:version="0.47 r22583" sodipodi:docname="Flag_of_Malta.svg" sodipodi:version="0.32" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 79.6 86.9"
@@ -47,7 +47,6 @@
         </div>
         <p class="foot">Everywhere, everybody, any time.</p>
     </div>
-    
 </template>
 
 <script>

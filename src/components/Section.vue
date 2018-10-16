@@ -4,7 +4,6 @@
         <p class="background_text">{{title}}</p>
         <br><br><br><p>l</p>
     </div>
-    
 </template>
 
 <script>

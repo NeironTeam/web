@@ -11,7 +11,7 @@
             <h2 class="subtitle" v-scroll-reveal="{ delay: 2000 }">Tabulamos con espacios</h2>
         </div>
 
-        <Mouse v-scroll-reveal="{ delay: 2000 }" class="mouse"/>
+        <Mouse class="mouse"/>
     </div>
 </template>
 

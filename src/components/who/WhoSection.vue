@@ -185,7 +185,7 @@ h1 {
 }
 
 #who {
-    background-image: url("../assets/FondoWho.jpg");
+    background-image: url("../../assets/FondoWho.jpg");
     background-position: center;
     background-size: cover;
     color: white;

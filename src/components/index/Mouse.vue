@@ -1,11 +1,10 @@
 <template>
     <div>
-        <div class="mouse-and-arrow">
+        <div class="mouse-and-arrow" v-scroll-reveal="{ delay: 2000 }">
             <MouseIcon/>
-            <ArrowIcon class="arrow"/>        
+            <ArrowIcon class="arrow"/>
         </div>
     </div>
-    
 </template>
 
 <script>
@@ -16,7 +15,9 @@ export default {
     name: "Mouse",
     mounted() {
         window.addEventListener("scroll", event => {
-            this.$el.style.opacity = 1 - event.pageY / 250
+            this.$el.style.opacity = 1 - window.scrollY / 250
+            console.log(window.scrollY)
+            console.log(this.$el.style.opacity)
         });
     },
     components: {

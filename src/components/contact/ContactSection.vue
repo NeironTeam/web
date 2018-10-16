@@ -1,10 +1,10 @@
 <template>
     <div class="container center">
         <div class="glitch center" id="glitch">
-            <div v-scroll-reveal.reset="{ delay: 500, duration: 2000, scale: 200}">
-                <h2>IT'S THE END?</h2>
-                <h2 class="red">IT'S THE END?</h2>
-                <h2 class="green">IT'S THE END?</h2>
+            <div v-scroll-reveal.reset="{ delay: 0,duration: 1000, scale: 0.001}">
+                <h2>IS IT THE END?</h2>
+                <h2 class="red">IS IT THE END?</h2>
+                <h2 class="green">IS IT THE END?</h2>
             </div>
         </div>
         <!-- <div class="glitch center behind" id="glitch"></div> -->
@@ -35,7 +35,7 @@
     }
 
     .glitch{
-        background: url("../assets/contact.jpg") center no-repeat;
+        background: url("../../assets/contact.jpg") center no-repeat;
         background-size: cover;
         width: 80vw;
         height: 60vh;
@@ -49,7 +49,7 @@
 
     h2{
         text-transform: uppercase;
-        font-size: 10vw;
+        font-size: 9vw;
         margin: 0;
         line-height: 0;
         color: white;
