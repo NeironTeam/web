@@ -3,43 +3,40 @@
     <div id="app">
         <NavBar/>
         <Index id="index"/>
-        <WhatSection v-scroll-reveal="{ delay: 500, distance: '0px' }" id="what" title="What is neiron dev?"/>
-        <WhoSection v-scroll-reveal="{ delay: 500, distance: '0px' }" id="who" title="Who?"/>
+        <WhatSection id="what" title="What is neiron dev?"/>
+        <WhoSection id="who" title="Who?"/>
         <Separator/>
         <HowSection id="how"
             title="How we can help you?"
             background-text="how?"/>
-        <WhereSection
-        v-scroll-reveal="{ delay: 500, distance: '0px' }"
-        id="where"/>
-        <ContactSection v-scroll-reveal="{ delay: 100 }"/>
-
+        <WhereSection id="where"/>
+        <ContactSection message="Have you got an idea?"/>
     </div>
 </template>
 
 <script>
-import NavBar from "./components/NavBar";
-import Index from "./components/index/Index";
-import WhatSection from "./components/what/WhatSection";
-import WhoSection from "./components/who/WhoSection";
-import HowSection from "./components/how/HowSection";
-import ContactSection from "./components/contact/ContactSection";
-import Separator from "./components/Separator";
-import WhereSection from "./components/where/WhereSection";
+    import NavBar from "./components/NavBar";
+    import Index from "./components/index/Index";
+    import WhatSection from "./components/what/WhatSection";
+    import WhoSection from "./components/who/WhoSection";
+    import HowSection from "./components/how/HowSection";
+    import ContactSection from "./components/contact/ContactSection";
+    import Separator from "./components/Separator";
+    import WhereSection from "./components/where/WhereSection";
 
-export default {
-    name: "App",
-    components: {
-        NavBar,
-        Index,
-        WhatSection,
-        WhoSection,
-        Separator,
-        HowSection,
-        ContactSection,
-        WhereSection,
-    },
-};
+    export default {
+        name: "App",
+        components: {
+            NavBar,
+            Index,
+            WhatSection,
+            WhoSection,
+            Separator,
+            HowSection,
+            ContactSection,
+            WhereSection,
+        },
+    };
 </script>
 
 <style>

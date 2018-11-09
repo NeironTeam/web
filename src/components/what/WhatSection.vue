@@ -103,7 +103,7 @@
 
             <div class="section-box-group">
                 <div class="section-box"
-                    v-scroll-reveal="{ delay: 600*index }"
+                    v-scroll-reveal="{ delay: 200*index }"
                     v-for="(section, index) in sections" :key="index"
                     :style="{ background: section.background }">
                         <i class="box-icon" :class="section.icon"></i>

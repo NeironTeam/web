@@ -1,7 +1,7 @@
 <template>
     <div class="outter">
         <div class="inner">
-            <div  v-scroll-reveal="{ delay: 600,duration: 1000, scale:1 }" class="logo">
+            <div  v-scroll-reveal="{ delay: 100,duration: 1000, scale:1, distance: '0px'}" class="logo">
                 <Logo/>
             </div>
             <h1 v-scroll-reveal="{ delay: 600,duration: 1000, scale: 100 }" class="title">

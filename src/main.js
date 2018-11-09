@@ -6,7 +6,7 @@ import VueScrollTo from "vue-scrollto";
 import VueScrollReveal from 'vue-scroll-reveal';
 
 Vue.config.productionTip = false;
- 
+
 // OR specifying custom default options for all uses of the directive
 Vue.use(VueScrollReveal, {
     class: 'v-scroll-reveal',

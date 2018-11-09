@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="mouse-and-arrow" v-scroll-reveal="{ delay: 2000 }">
+        <div class="mouse-and-arrow">
             <MouseIcon/>
             <ArrowIcon class="arrow"/>
         </div>

@@ -2,9 +2,9 @@
     <div class="container center">
         <div class="glitch center" id="glitch">
             <div v-scroll-reveal.reset="{ delay: 0,distance: '0px',duration: 1000, scale: 0.001}">
-                <h2>IS IT THE END?</h2>
-                <h2 class="red">IS IT THE END?</h2>
-                <h2 class="green">IS IT THE END?</h2>
+                <h2>{{message}}</h2>
+                <h2 class="red">{{message}}</h2>
+                <h2 class="green">{{message}}</h2>
             </div>
         </div>
         <!-- <div class="glitch center behind" id="glitch"></div> -->
@@ -14,6 +14,9 @@
 <script>
     export default {
         name: "ContactSection",
+        props: {
+            message: String
+        },
         components: {
         }
     };
@@ -49,7 +52,7 @@
 
     h2{
         text-transform: uppercase;
-        font-size: 9vw;
+        font-size: 5vw;
         margin: 0;
         line-height: 0;
         color: white;
