@@ -1,17 +1,19 @@
 <template>
     <div class="person">
-        <RoundImage :img="img"/>
-        <h2 class="name">{{name}}</h2>
-        <h4 class="position">{{position}}</h4>
-        <p class="description">{{description}}</p>
-        <div class="social-links">
-            <SocialLink
-            :styles="socialLink.styles"
-            :icon="socialLink.icon"
-            :text="socialLink.text"
-            :link="socialLink.link"
-            v-for="(socialLink, index) in socialNetworks"
-            :key="index"/>
+        <RoundImage class="picture" v-scroll-reveal="{ delay: 500 , position:'0px'}" :img="img"/>
+        <div v-scroll-reveal="{ delay: 1000 , position:'0px'}" class="card">
+            <h2 class="name">{{name}}</h2>
+            <h4 class="position">{{position}}</h4>
+            <p class="description">{{description}}</p>
+            <div class="social-links">
+                <SocialLink
+                :styles="socialLink.styles"
+                :icon="socialLink.icon"
+                :text="socialLink.text"
+                :link="socialLink.link"
+                v-for="(socialLink, index) in socialNetworks"
+                :key="index"/>
+            </div>
         </div>
 	</div>
 
@@ -55,10 +57,24 @@ export default {
     display: inline-block;
     width: 20%;
     margin: 4rem 2rem;
+}
+
+.picture{
+    position: relative;
+    z-index: 2;
+}
+
+.card {
+    width: 100%;
+    position: relative;
+    padding-top: 6vh;
+    top: -6vh;
     background-color: white;
     border-radius: .8vh;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    z-index: 1;
 }
+
 .description {
     text-align: center;
     position: relative;

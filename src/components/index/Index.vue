@@ -4,11 +4,11 @@
             <div  v-scroll-reveal="{ delay: 100,duration: 1000, scale:1, distance: '0px'}" class="logo">
                 <Logo/>
             </div>
-            <h1 v-scroll-reveal="{ delay: 600,duration: 1000, scale: 100 }" class="title">
+            <h1 v-scroll-reveal="{ delay: 100,duration: 1000, scale:1, distance: '0px'}" class="title">
                 neiron
-                <small v-scroll-reveal="{ delay: 1600 }" >dev</small>
+                <small v-scroll-reveal="{ delay: 1000 }" >dev</small>
             </h1>
-            <h2 class="subtitle" v-scroll-reveal="{ delay: 2000 }">Tabulamos con espacios</h2>
+            <h2 class="subtitle" v-scroll-reveal="{ delay: 1500 }">Tabulamos con espacios</h2>
         </div>
 
         <Mouse class="mouse"/>

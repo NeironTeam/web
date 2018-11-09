@@ -79,6 +79,10 @@
     }
 
     @media only screen and (max-width: 978px) {
+        .container{
+            height: auto;
+        }
+
         .section-content {
             min-height: 0;
         }

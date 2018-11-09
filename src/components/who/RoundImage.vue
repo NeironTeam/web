@@ -32,6 +32,7 @@ img {
     margin: auto;
     height: 100%;
     width: auto;
+    z-index: 20;
 }
 
 @media only screen and (max-width: 1300px) {
