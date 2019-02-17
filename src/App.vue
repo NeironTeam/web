@@ -10,7 +10,7 @@
             title="How we can help you?"
             background-text="how?"/>
         <WhereSection id="where"/>
-        <ContactSection message="Have you got an idea?"/>
+        <ContactSection/>
     </div>
 </template>
 
