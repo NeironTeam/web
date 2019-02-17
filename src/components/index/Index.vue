@@ -1,5 +1,8 @@
 <template>
     <div class="outter">
+        <div class='wave -one'></div>
+        <div class='wave -two'></div>
+        <div class='wave -three'></div>
         <div class="inner">
             <div  v-scroll-reveal="{ delay: 100,duration: 1000, scale:1, distance: '0px'}" class="logo">
                 <Logo/>
@@ -96,4 +99,42 @@ export default {
     position: absolute;
     bottom: 0;
 }
+
+/** Waves **/
+.wave {
+    z-index: -1;
+    opacity: .3;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    width: 500vh;
+    height: 500vh;
+    margin-left: -250vh;
+    margin-top: -450vh;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    border-style: solid;
+    border-width: 5vh;
+    border-color: rgba(214,127,94,1);
+    animation: drift 30s infinite linear;
+}
+
+.wave.-two {
+    animation: drift 70s infinite linear;
+    opacity: .3;
+    border-color: rgb(218, 34, 52);
+    /* border-color: rgba(150,114,165,1) */
+}
+
+.wave.-three {
+    opacity: .5;
+    animation: drift 50s infinite linear;
+    border-color: rgb(31, 97, 196);
+}
+
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+
 </style>
