@@ -11,7 +11,7 @@
                 neiron
                 <small v-scroll-reveal="{ delay: 1000 }" >dev</small>
             </h1>
-            <h2 class="subtitle" v-scroll-reveal="{ delay: 1500 }">Tabulamos con espacios</h2>
+            <h2 class="subtitle" v-scroll-reveal="{ delay: 1500 }">Shaping our future</h2>
         </div>
 
         <Mouse class="mouse"/>
@@ -34,7 +34,7 @@ export default {
 .outter {
     display: inline-block;
     vertical-align: top;
-    width: 100%;
+    max-width: 100vw;
     height: 100vh;
     position: relative;
 
@@ -42,6 +42,8 @@ export default {
     justify-content: center;
     align-items: center;
     align-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .outter .inner {
