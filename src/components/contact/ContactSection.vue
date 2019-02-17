@@ -84,7 +84,7 @@
     .glitch:hover h2:before{
         content: 'Contact us';
         cursor: pointer;
-        animation: changeLetterError 1s linear;
+        animation: changeLetterError 0.5s linear;
     }
 
     .glitch:hover{
