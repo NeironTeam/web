@@ -11,7 +11,7 @@
         position: relative;
         width: 74%;
         height: auto;
-        min-height: 55vh;
+        min-height: 45vh;
         margin: 20vh 8% 40vh;
         padding: 5vh 5vw;
         background: linear-gradient(45deg, #dad4ff 0%,#7b4888de 100%);
@@ -136,19 +136,19 @@ export default {
                 {
                     title: "Formation",
                     icon: "icon-rocket",
-                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus laoreet est, sed consectetur mi pulvinar vitae.",
+                    content: "Our projects are focused to expand each individual knowledge. We want to learn, and become more competent profesionals creating great things in our way.",
                     background: "linear-gradient(45deg, #1D1E2C 0%, #59656F 100%)",
                 },
                 {
                     title: "Community",
                     icon: "icon-globe",
-                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus laoreet est, sed consectetur mi pulvinar vitae.",
+                    content: "Neiron dev engloba una comunidad que comparten la idea de progreso y la creación de un grupo de trabajo donde todos se sientan cómodos. La búsqueda de objetivos comunes y de superación.",
                     background: "linear-gradient(45deg, #427867 0%, #58AB99 100%)",
                 },
                 {
                     title: "Development",
                     icon: "icon-bulb",
-                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus laoreet est, sed consectetur mi pulvinar vitae.",
+                    content: "Cada proyecto consiste en una solución adaptada a la actualidad, que ofrezca crecimiento a los desarrollados con la puesta en prática de nuevas tecnologías y que pueda tener interés para algún conjunto de personas.",
                     background: "linear-gradient(45deg, #FFAA5A 0%, #FF785A 100%)",
                 },
             ]
