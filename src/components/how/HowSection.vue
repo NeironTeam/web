@@ -8,63 +8,40 @@
     min-height: 100vh;
     margin: 0vh 0 0vh;
     padding: 160px 5vw 5vh;
-    background-image: url("../../assets/how-background.jpg");
-    background-position: center;
-    background-size: cover;
 }
 
 .section-content .title {
     font-size: 5vh;
-    color: white;
+    color: black;
 }
 
-.section-content .section-columns {
+.section-content .section-iceberg {
     display: inline-block;
     vertical-align: top;
     width: 100%;
-    height: 100%;
-    margin: 10vh 0;
+    padding: 5vh 0;
+}
 
+.section-content .section-services {
     display: flex;
+    width: 100%;
+    flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
 }
 
-.section-content .section-columns .section-column {
-    display: inline-block;
-    vertical-align: top;
-    width: 50%;
-    height: auto;
-}
-
-.section-content .section-columns .section-column.services {
-    display: flex;
-    width: 40%;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-}
-
-.section-content .section-columns .section-column.iceberg-graphic {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 </style>
 
 <template>
     <div class="section-content">
         <h3 class="title">{{ title }}</h3>
-        <div class="section-columns">
-            <div class="section-column services">
-                <ServiceItem v-for="(service, index) in services"
-                    :key="index"
-                    :item="service"/>
-            </div>
-            <div class="section-column iceberg-graphic">
-                <TechIceberg :technologies="technologies"/>
-            </div>
+        <div class="section-icebert">
+            <TechIceberg></TechIceberg>
+        </div>
+        <div class="section-services">
+            <ServiceItem v-for="(service, index) in services"
+                :key="index"
+                :item="service"/>
         </div>
     </div>
 </template>

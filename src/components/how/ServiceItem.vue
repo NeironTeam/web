@@ -4,8 +4,8 @@
         vertical-align: top;
         width: 100%;
         height: auto;
-        margin: 5vh 0;
-        padding: 3vh 4vw;
+        margin: 5vh 1vw;
+        padding: 3vh 2vw;
         border-radius: .8vh;
         background: white;
         text-align: center;

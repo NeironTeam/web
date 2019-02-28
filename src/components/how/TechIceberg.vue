@@ -1,117 +1,92 @@
 <style scoped>
-.iceberg {
+.shadow {
+    filter: drop-shadow(0px 15px 13px rgba(0,0,0,0.25));
+    -webkit-filter: drop-shadow(0px 15px 13px rgba(0,0,0,0.25));
+    -moz-filter: drop-shadow(0px 15px 13px rgba(0,0,0,0.25));
+}
+
+#iceberg-container {
     display: inline-block;
     vertical-align: top;
+    position: relative;
     width: 100%;
     height: auto;
     text-align: center;
+    padding: 20vh 0;
 }
 
-.iceberg .techs {
+#background {
     display: inline-block;
-    position: relative;
-    vertical-align: top;
-    width: 100%;
-
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
+    width: 80%;
+    height: auto;
+    max-width: 600px;
 }
 
-.iceberg .techs .tech {
-    display: inline-block;
-
-    color: black;
-    font-size: 10vh;
+#iceberg {
+    position: absolute;
+    width: 40vh;
+    height: auto;
+    max-width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
 }
 
-.iceberg .techs .graphic {
-    display: inline-block;
-    vertical-align: top;
+.bubble {
     position: absolute;
-    width: 100%;
     height: auto;
-    z-index: 0;
+    min-width: 300px;
+    left: 50%;
+    z-index: 2;
 }
 
-.iceberg .techs .graphic#graphic-top {
-    bottom: 0;
-    left: 12.5%;
-    width: 75%;
-    margin-bottom: 10%;
+#bots {
+    width: 32vh;
+    top: 3%;
+    transform: translateX(-125%);
 }
 
-.iceberg .techs .graphic#graphic-bottom {
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin-top: 10%;
+#web {
+    width: 35vh;
+    top: 8%;
+    transform: translateX(30%);
 }
+
+#backend {
+    width: 37vh;
+    bottom: 3%;
+    transform: translateX(-110%);
+}
+
+@media screen and (max-width: 875px) {
+    #iceberg-container { text-align: center; }
+
+    #background, #iceberg { display: none; }
+
+    .bubble {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        margin: 5vw 0;
+        width: 70% !important;
+        min-width: 400px;
+        height: auto;
+        transform: initial !important;
+        top: 0 !important; 
+        left: 0;
+    }
+}
+
 </style>
 
 <template>
-    <div class="iceberg">
-        <div class="techs frontend">
-            <svg id="graphic-top" class="graphic" viewBox="0 0 293.508 163.941">
-                <path fill="#fff" d="M287.413,163.941c-2.373,0.009-4.525-1.396-5.477-3.571L236.278,55.72l-47.621,34.526
-                    c-2.668,1.923-6.389,1.319-8.311-1.348c-0.467-0.648-0.799-1.385-0.977-2.165l-16.668-74.826h-35.717l-28.693,46.67
-                    c-1.726,2.798-5.394,3.666-8.192,1.939c-0.374-0.23-0.721-0.502-1.035-0.809L67.814,39.111L11.322,154.596
-                    c-1.447,2.959-5.018,4.185-7.977,2.738c-2.958-1.446-4.185-5.018-2.738-7.977l0,0L60.552,26.551c1.451-2.95,5.019-4.165,7.969-2.715
-                    c0.55,0.271,1.055,0.624,1.496,1.048l21.788,21.133l26.549-43.157c1.076-1.768,2.991-2.85,5.06-2.857h44.05
-                    c2.838-0.069,5.33,1.874,5.953,4.643l15.953,70.839l46.076-33.574c2.65-1.945,6.375-1.374,8.32,1.275
-                    c0.266,0.362,0.49,0.753,0.668,1.165l48.574,111.198c1.316,3.014-0.061,6.522-3.074,7.838c-0.758,0.33-1.576,0.499-2.402,0.496
-                    L287.413,163.941z"/>
-            </svg>
-
-            <span class="tech"
-                v-for="(tech, index) in technologies.frontend"
-                :key="index">
-                <i :class="tech"></i>
-            </span>
-        </div>
-
-        <svg id="graphic-center" class="graphic" viewBox="0 0 530.186 44.169">
-            <path fill="#fff" d="M270.069,44.168c-21.793,0.078-42.393-9.946-55.778-27.145c-13.289,16.855-33.601,26.648-55.063,26.55
-                c-21.655-0.086-42.078-10.089-55.42-27.145C80.003,47.103,35.84,52.673,5.166,28.87c-1.013-0.786-2.004-1.6-2.973-2.44
-                c-2.548-2.076-2.931-5.826-0.854-8.375s5.826-2.931,8.375-0.854c0.095,0.078,0.188,0.158,0.277,0.241
-                c24.419,21.068,61.294,18.353,82.363-6.067c2.256-2.615,4.276-5.426,6.036-8.398c1.072-1.808,3.018-2.916,5.12-2.917l0,0
-                c2.102,0.001,4.047,1.109,5.12,2.917c10.616,17.828,29.849,28.734,50.599,28.692c20.491,0.063,39.496-10.685,50.003-28.275
-                c1.154-1.713,3.056-2.774,5.12-2.857c2.09-0.012,4.033,1.072,5.119,2.857c16.75,27.945,52.984,37.021,80.929,20.27
-                c8.32-4.987,15.281-11.949,20.27-20.27c1.086-1.785,3.029-2.869,5.119-2.857l0,0c2.09-0.012,4.033,1.072,5.119,2.857
-                c10.52,17.609,29.551,28.359,50.063,28.275c20.656-0.075,39.754-10.992,50.303-28.752c1.678-2.827,5.328-3.759,8.156-2.081
-                c0.857,0.509,1.572,1.225,2.082,2.081c16.221,27.677,51.73,37.086,79.529,21.073c2.773-1.764,6.453-0.944,8.217,1.83
-                s0.945,6.453-1.83,8.217c-0.141,0.09-0.285,0.174-0.434,0.252c-30.426,17.497-69.094,9.875-90.602-17.858
-                c-13.344,17.056-33.766,27.059-55.422,27.145c-21.482,0.07-41.799-9.77-55.063-26.669C312.532,34.165,291.903,44.237,270.069,44.168
-                z"/>
-        </svg>
-
-        <div class="techs backend">
-            <svg id="graphic-bottom" class="graphic" viewBox="0 0 386.659 289.214">
-                <path fill="#fff" d="M157.424,289.214h-0.714c-1.64-0.189-3.127-1.052-4.107-2.381L1.163,81.401
-                    c-1.356-1.838-1.542-4.29-0.477-6.311L38.428,3.063c1.597-2.874,5.221-3.909,8.095-2.312c2.779,1.544,3.854,4.999,2.441,7.848
-                    L13.247,77.354L158.496,274.63l49.767-41.67c2.141-1.647,5.121-1.647,7.262,0l37.145,26.192L374.344,74.913L348.749,9.432
-                    c-1.068-3.109,0.588-6.495,3.697-7.563c2.92-1.003,6.123,0.395,7.373,3.217l26.432,68.339c0.709,1.813,0.486,3.857-0.596,5.477
-                    L259.217,270.7c-1.805,2.749-5.494,3.514-8.242,1.71c-0.051-0.033-0.102-0.067-0.15-0.103l-38.455-26.906l-51.136,42.384
-                    C160.171,288.694,158.822,289.2,157.424,289.214z"/>
-            </svg>
-
-            <span class="tech"
-                v-for="(tech, index) in technologies.backend"
-                :key="index">
-                <i :class="tech"></i>
-            </span>
-        </div>
+    <div id="iceberg-container">
+        <img id="background" class="shadow" src="../../assets/iceberg/background.svg"/>
+        <img id="bots" class="bubble shadow" src="../../assets/iceberg/bots.svg"/>
+        <img id="web" class="bubble shadow" src="../../assets/iceberg/web.svg"/>
+        <img id="backend" class="bubble shadow" src="../../assets/iceberg/backend.svg"/>
+        <img id="iceberg" class="shadow" src="../../assets/iceberg/iceberg.svg"/>
     </div>
 </template>
 
-<script>
-export default {
-    props: {
-        technologies: {
-            type: Object,
-            required: true,
-        },
-    },
-};
-</script>
