@@ -163,14 +163,14 @@ h1 {
     font-size: 1rem;
     bottom: 10%;
     margin-top: 8vw;
-    justify-content: center;
+    justify-content: space-around;
     
 }
 .row-profiles {
     display: flex;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
     flex-basis: 50%;
 }
 
