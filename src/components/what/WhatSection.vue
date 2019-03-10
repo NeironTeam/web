@@ -62,9 +62,8 @@
         margin: 0 auto;
         width: 100%;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: stretch;
-        max-width: 1300px;
     }
 
 

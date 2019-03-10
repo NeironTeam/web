@@ -10,6 +10,7 @@
         background: white;
         text-align: center;
         box-shadow: 0px 10px 35px -10px rgba(0,0,0,1);
+        max-width: 400px;
     }
 
     .service .service-icon { font-size: 3em; }
