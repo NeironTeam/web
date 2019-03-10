@@ -90,7 +90,7 @@ export default {
     text-align: center;
     font-weight: 400;
     font-size: 2.5vh;
-    color: #444;
+    color: white;
 }
 
 .outter .mouse {
@@ -105,34 +105,43 @@ export default {
 /** Waves **/
 .wave {
     z-index: -1;
-    opacity: .3;
+    opacity: 1;
     position: absolute;
-    top: 3%;
+    top: 9%;
     left: 50%;
     width: 500vh;
     height: 500vh;
     margin-left: -250vh;
     margin-top: -450vh;
-    transform-origin: 50% 48%;
+    transform-origin: 50% 49.5%;
     border-radius: 43%;
     border-style: solid;
-    border-width: 5vh;
+    border-width: 6vh;
     border-color: rgb(136, 55, 206);
     animation: drift 30s infinite linear;
+    box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.4);
 }
 
 .wave.-two {
     animation: drift 70s infinite linear;
-    opacity: .3;
+    opacity: 1;
     border-color: rgb(218, 34, 52);
     /* border-color: rgba(150,114,165,1) */
 }
 
 .wave.-three {
-    opacity: .5;
+    opacity: 1;
     animation: drift 50s infinite linear;
     border-color: rgb(31, 97, 196);
 }
+
+h1{
+    color: white;
+}
+.subtitle{
+    color:white;
+}
+
 
 @keyframes drift {
   from { transform: rotate(0deg); }

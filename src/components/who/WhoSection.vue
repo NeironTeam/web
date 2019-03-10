@@ -27,7 +27,7 @@ export default {
                     position: "Data Scientist",
                     description:
                         "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
-                    img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
+                    img: "https://joeschmoe.io/api/v1/random",
                     socialNetworks: [
                         {
                             text: "Twiter",
@@ -60,7 +60,7 @@ export default {
                     position: "Data Scientist",
                     description:
                         "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
-                    img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
+                    img: "https://joeschmoe.io/api/v1/random",
                     socialNetworks: [
                         {
                             text: "Twiter",
@@ -93,7 +93,7 @@ export default {
                     position: "Data Scientist",
                     description:
                         "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
-                    img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
+                    img: "https://joeschmoe.io/api/v1/random",
                     socialNetworks: [
                         {
                             text: "Twiter",
@@ -126,7 +126,7 @@ export default {
                     position: "Data Scientist",
                     description:
                         "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
-                    img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
+                    img: "https://joeschmoe.io/api/v1/random",
                     socialNetworks: [
                         {
                             text: "Twiter",
@@ -170,6 +170,7 @@ export default {
 <style scoped>
 h1 {
     font-size: 10vw;
+    color: black;
     padding: 50px 0px 0px 100px;
 }
 .profiles {
@@ -184,9 +185,9 @@ h1 {
 }
 
 #who {
-    background-image: url("../../assets/FondoWho.jpg");
+    /* background-image: url("../../assets/FondoWho.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     color: white;
     padding-bottom: 15vh;
 }
