@@ -12,14 +12,40 @@
     width: 100%;
     height: auto;
     text-align: center;
-    padding: 20vh 0;
 }
 
-#background {
+#iceberg-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -5vw;
+    vertical-align: top;
+    width: 100vw;
+    height: 28vh;
+    background: #1f61c4;
+    box-shadow: 0px -10px 30px -10px rgba(0,0,0,0.75);
+}
+
+#sun {
     display: inline-block;
-    width: 80%;
-    height: auto;
-    max-width: 600px;
+    vertical-align: top;
+    position: relative;
+    width: 55vh;
+    height: 30vh;
+    margin-bottom: 25vh;
+    overflow: hidden;
+}
+
+#sun::before{
+    content: '';
+    position: absolute;
+    top: 5vh;
+    left: 5vh;
+    width: 45vh;
+    height: 45vh;
+    background: #FBB03B;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.75);
 }
 
 #iceberg {
@@ -33,36 +59,14 @@
     z-index: 1;
 }
 
-.bubble {
-    position: absolute;
+#technologies {
+    display: flex;
+    width: 100%;
     height: auto;
-    min-width: 300px;
-    left: 50%;
-    z-index: 2;
-}
-
-#bots {
-    width: 32vh;
-    top: 3%;
-    transform: translateX(-125%);
-}
-
-#web {
-    width: 35vh;
-    top: 8%;
-    transform: translateX(30%);
-}
-
-#backend {
-    width: 37vh;
-    bottom: 3%;
-    transform: translateX(-110%);
 }
 
 @media screen and (max-width: 875px) {
     #iceberg-container { text-align: center; }
-
-    #background, #iceberg { display: none; }
 
     .bubble {
         display: inline-block;
@@ -82,10 +86,7 @@
 
 <template>
     <div id="iceberg-container">
-        <img id="background" class="shadow" src="../../assets/iceberg/background.svg"/>
-        <img id="bots" class="bubble shadow" src="../../assets/iceberg/bots.svg"/>
-        <img id="web" class="bubble shadow" src="../../assets/iceberg/web.svg"/>
-        <img id="backend" class="bubble shadow" src="../../assets/iceberg/backend.svg"/>
+        <div id="sun"></div>
         <img id="iceberg" class="shadow" src="../../assets/iceberg/iceberg.svg"/>
     </div>
 </template>

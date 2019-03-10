@@ -23,17 +23,17 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 @keyframes on-off {
-    0% {color: #427867; font-weight: 700;}
-    49% {color: #427867; font-weight: 700;}
-    50% {color: #58AB99; font-weight: 500;}
-    100% {color: #58AB99; font-weight: 500;}
+    0% {color: #134186; font-weight: 700;}
+    49% {color: #134186; font-weight: 700;}
+    50% {color: #1f61c4; font-weight: 500;}
+    100% {color: #1f61c4; font-weight: 500;}
 }
 
 @keyframes off-on {
-    0% {color: #58AB99; font-weight: 500;}
-    49% {color: #58AB99; font-weight: 500;}
-    50% {color: #427867; font-weight: 700;}
-    100% {color: #427867; font-weight: 700;}
+    0% {color: #1f61c4; font-weight: 500;}
+    49% {color: #1f61c4; font-weight: 500;}
+    50% {color: #134186; font-weight: 700;}
+    100% {color: #134186; font-weight: 700;}
 }
 
 p {
@@ -42,7 +42,7 @@ p {
 }
 .title{
     padding-top:10vh;
-    background-color: #58AB99;/**#427867;*/
+    background-color: #1f61c4;
     color: white;
     font-size: 40pt;
     padding-left: 50px;
@@ -51,11 +51,11 @@ p {
 
 .foot {
     padding-top: 10vh;
-    color: #427867;
+    color: #1f61c4;
     font-size: 25pt;
 }
 .right-on {
-    color: #427867;
+    color: #1f61c4;
     font-size: 50pt;
     font-weight: 700;
     animation-name: on-off;
@@ -63,7 +63,7 @@ p {
     animation-iteration-count: infinite;
 }
 .right-off {
-    color: #58AB99;
+    color: #134186;
     font-size: 50pt;
     font-weight: 500;
     animation-name: off-on;
@@ -73,7 +73,6 @@ p {
 .content {
     display: inline-block;
     position: relative;
-    padding-top: 20vh;
     height: 100vh;
     max-width: 100vw;
     overflow-x: hidden;
@@ -102,7 +101,7 @@ p {
 
 .center {
     position: relative;
-    background-color: #58AB99;
+    background-color: #1f61c4;
     width: 100vw;
     padding: 0;
     margin: 0;
