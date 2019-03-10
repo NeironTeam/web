@@ -1,14 +1,9 @@
 <template>
-    <div :style="styles" class="btn-round img__wrap">
         <a
             :class="icon"
             class="social-link img__img"
             :href="link">
         </a>
-        <div class="img__description_layer">
-            <p class="img__description">{{text}}</p>
-        </div>
-    </div>
 
 </template>
 
@@ -34,11 +29,13 @@ export default {
 <style scoped>
 .social-link {
     text-decoration: none;
+    color: black;
+    margin: 5%
 }
 .btn-round {
     border-radius: 999em;
-    width: 50px;
-    height: 50px;
+    width: 7vh;
+    height: 7vh;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     line-height: 1;
     font-size: 25px;
@@ -46,13 +43,12 @@ export default {
     cursor: pointer;
     display: inline-block;
     margin: 20px 15px;
-    background-color: #4545db;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     opacity: 0.75;
 }
 .btn-round:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     opacity: 1;
 }
 
@@ -63,7 +59,6 @@ export default {
     height: 100%;
     width: 100%;
     text-align: center;
-    color: #fff;
 }
 .img__wrap {
     position: relative;

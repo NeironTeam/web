@@ -5,7 +5,6 @@
         <Index id="index"/>
         <WhatSection id="what" title="What is neiron dev?"/>
         <WhoSection id="who" title="Who?"/>
-        <Separator/>
         <HowSection id="how"
             title="How we can help you?"
             background-text="how?"/>
@@ -21,7 +20,6 @@
     import WhoSection from "./components/who/WhoSection";
     import HowSection from "./components/how/HowSection";
     import ContactSection from "./components/contact/ContactSection";
-    import Separator from "./components/Separator";
     import WhereSection from "./components/where/WhereSection";
 
     export default {
@@ -31,7 +29,6 @@
             Index,
             WhatSection,
             WhoSection,
-            Separator,
             HowSection,
             ContactSection,
             WhereSection,
