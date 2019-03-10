@@ -65,6 +65,14 @@
     height: auto;
 }
 
+/* .water {
+    height: 100%;
+    width: 100%;
+    padding-top: 50%;
+    position: absolute;
+    background-color: blue;
+} */
+
 @media screen and (max-width: 875px) {
     #iceberg-container { text-align: center; }
 

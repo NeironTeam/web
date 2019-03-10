@@ -1,36 +1,48 @@
 <style scoped>
-
-    .container{
-        height: 100vh;
-        width: 100%;
+    .title{
+        color: white;
     }
+
+    .line:before {
+        content:'';
+        position: absolute;
+    }
+
+    .line-a:before {
+        height: 50vh;
+        width: 120vw;
+        left: -10vw;
+        top: 17vh;
+        z-index: -1;
+        -ms-transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+        background-color: rgb(206, 173, 232);
+        box-shadow: 0px 5px 50px -10px rgba(0,0,0,0.75);
+    }
+
+    .line-b:before{
+        height: 45vh;
+        width: 90vw;
+        left: -10vw;
+        top:7vh;
+        z-index: -2;
+        -ms-transform: rotate(5deg);
+        -webkit-transform: rotate(5deg);
+        transform: rotate(5deg);
+        background-color: rgb(242,178,178);
+    }
+
 
     .section-content {
         display: inline-block;
         vertical-align: top;
         position: relative;
-        width: 74%;
+        width: 100%;
         height: auto;
-        min-height: 45vh;
-        margin: 20vh 8% 40vh;
-        padding: 5vh 5vw;
-        background: linear-gradient(45deg, #dad4ff 0%,#7b4888de 100%);
-        border-radius: .8vh;
-        box-shadow: 10px 10px 80px -10px rgba(0,0,0,0.75);
-
-        /* background
-
-        background-image: url("../../assets/what-background.jpg");
-        background-repeat: no-repeat;
-        background-position: center;  */
-    }
-
-    .background-image{
-        background:
-            linear-gradient(45deg, #dad4ff 0%,#7b4888de 100%),
-            url("../../assets/what-background.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
+        min-height: 50vh;
+        margin: 0vh 0 0vh;
+        padding: 100px 5vw 5vh;
     }
 
     .section-content .title {
@@ -38,59 +50,23 @@
         color: white;
     }
 
-    .section-content .section-box-group {
+    .section-content .section-iceberg {
         display: inline-block;
         vertical-align: top;
-        position: absolute;
-        bottom: -15vh;
-        left: 10vw;
         width: 100%;
-        height: auto;
+        padding: 5vh 0;
+    }
 
+    .section-content .section-services {
         display: flex;
-        justify-content: space-around;
-        align-content: stretch;
-    }
-
-    .section-content .section-box-group .section-box {
-        display: inline-block;
-        vertical-align: top;
-        position: relative;
-        width: 28%;
-        height: auto;
-        min-height: 40vh;
-        margin: 3vh 2vw;
-        padding: 2vh 1vw;
-        height: auto;
-        color: white;
-        border-radius: .8vh;
-        box-shadow: 10px 20px 80px -10px rgba(0,0,0,0.75);
-    }
-
-    .section-content .section-box-group .section-box .box-icon {
-        position: absolute;
-        bottom: 2vh;
-        right: 1vw;
-        font-size: 10vh;
-        opacity: 0.3;
-    }
-
-    .section-content .section-box-group .section-box .box-title {
-        display: inline-block;
-        vertical-align: top;
+        margin: 0 auto;
         width: 100%;
-        height: auto;
-        font-size: 2.2vh;
-        margin-bottom: 3vh;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        max-width: 1300px;
     }
 
-    .section-content .section-box-group .section-box .box-content {
-        display: inline-block;
-        vertical-align: top;
-        width: 100%;
-        height: auto;
-        font-size: 18px;
-    }
 
     @media only screen and (max-width: 978px) {
         .container{
@@ -100,40 +76,65 @@
         .section-content {
             min-height: 0;
         }
-        .section-content .section-box-group { 
+        .section-content .section-services {
             position: relative;
             flex-wrap: wrap;
         }
-        .section-content .section-box-group .section-box { 
-            width: 96%;
-            min-height: 0;
-            margin: 1.5vh 2vw;
-            padding: 3vh 3vw;
+
+        .line-a:before{
+            height: 100vh;
+            width: 150vw;
+            left: -20vw;
+            top: 30vh;
+        }
+
+        .line-b:before{
+            height: 45vh;
+            width: 120vw;
+            left: -10vw;
+            top:7vh;
         }
     }
+
+    @media only screen and (min-width: 1400px) {
+        .line-b:before{
+            height: 45vh;
+            width: 80vw;
+            left: -10vw;
+            top:7vh;
+        }
+    }
+
 
 </style>
 
 <template>
-    <div class="container">
-        <div class="section-content background-image" id="get-static">
-            <h3 class="title">{{ title }}</h3>
-
-            <div class="section-box-group">
-                <div class="section-box"
-                    v-scroll-reveal="{ delay: 200*index }"
-                    v-for="(section, index) in sections" :key="index"
-                    :style="{ background: section.background }">
-                        <i class="box-icon" :class="section.icon"></i>
-                        <h4 class="box-title">{{ section.title }}</h4>
-                        <p class="box-content">{{ section.content }}</p>
-                </div>
+    <div class="section-content">
+        <h3 class="title">{{ title }}</h3>
+        <div class="line line-a"> </div>
+        <div class="line line-b"> </div>
+        <!-- <div class="section-box-group">
+            <div class="section-box"
+                v-scroll-reveal="{ delay: 200*index }"
+                v-for="(section, index) in sections" :key="index"
+                :style="{ background: section.background }">
+                    <i class="box-icon" :class="section.icon"></i>
+                    <h4 class="box-title">{{ section.title }}</h4>
+                    <p class="box-content">{{ section.content }}</p>
             </div>
+        </div> -->
+        <div class="section-services">
+            <ServiceItem v-for="(service, index) in sections"
+                :key="index"
+                :item="service"/>
         </div>
     </div>
 </template>
 
 <script>
+
+import ServiceItem from "./../how/ServiceItem";
+
 export default {
     name: "WhatSection",
     props: {
@@ -167,6 +168,9 @@ export default {
                 },
             ]
         }
-    }
+    },
+    components: {
+        ServiceItem
+    },
 }
 </script>

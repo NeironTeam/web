@@ -117,7 +117,7 @@ export default {
     border-radius: 43%;
     border-style: solid;
     border-width: 5vh;
-    border-color: rgba(214,127,94,1);
+    border-color: rgb(136, 55, 206);
     animation: drift 30s infinite linear;
 }
 
