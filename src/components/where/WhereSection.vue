@@ -72,9 +72,10 @@ p {
 .content {
     display: inline-block;
     position: relative;
-    height: 100vh;
+    height: auto;
     max-width: 100vw;
     overflow-x: hidden;
+    padding: 10vh 0;
 }
 
 .top-color{

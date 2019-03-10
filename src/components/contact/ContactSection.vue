@@ -27,7 +27,8 @@
 
     .container{
         width: 100vw;
-        height: 100vh;
+        height: auto;
+        padding: 10vh 0;
     }
 
     .center{
