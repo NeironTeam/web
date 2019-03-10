@@ -7,6 +7,7 @@
     height: auto;
     min-height: 100vh;
     padding: 160px 5vw 0;
+    margin-bottom: -1vh; /* fix white line */
 }
 
 .section-content .title {
@@ -42,8 +43,6 @@
     align-items: stretch;
     background: #1f61c4;
 }
-
-
 
 </style>
 
@@ -98,17 +97,17 @@ export default {
             ],
             technologies: [
                 {
-                    icon: "icon-user-following",
+                    icon: "icon-screen-smartphone",
                     title: "Customised service",
                     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 },
                 {
-                    icon: "icon-wallet",
+                    icon: "icon-screen-desktop",
                     title: "Tighter budget",
                     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 },
                 {
-                    icon: "icon-layers",
+                    icon: "icon-organization",
                     title: "Last technologies",
                     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 },

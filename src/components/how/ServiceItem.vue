@@ -9,13 +9,14 @@
         border-radius: .8vh;
         background: white;
         text-align: center;
-        box-shadow: 10px 20px 50px -15px rgba(0,0,0,0.75);
+        box-shadow: 0px 10px 35px -10px rgba(0,0,0,1);
     }
 
     .service .service-icon { font-size: 3em; }
     .service .service-title { 
         font-size: 1.6em; 
         margin: 3vh 0;
+        font-weight: 500
     }
 
     .service .service-content { 
