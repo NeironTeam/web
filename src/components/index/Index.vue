@@ -135,11 +135,11 @@ export default {
     border-color: rgb(31, 97, 196);
 }
 
-h1{
-    color: white;
+.title{
+    color: #dddddd;
 }
 .subtitle{
-    color:white;
+    color:#dddddd;
 }
 
 

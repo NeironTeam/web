@@ -9,7 +9,7 @@
     }
 
     .line-a:before {
-        height: 50vh;
+        height: 70vh;
         width: 120vw;
         left: -10vw;
         top: 17vh;
@@ -22,8 +22,8 @@
     }
 
     .line-b:before{
-        height: 45vh;
-        width: 90vw;
+        height: 80vh;
+        width: 120vw;
         left: -10vw;
         top:7vh;
         z-index: -2;
