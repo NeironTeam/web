@@ -10,7 +10,7 @@
             <p id="right-here" class="right-off">right here</p>
             <p id="right-now" class="right-on">right now</p>
         </div>
-        <p class="foot">Everywhere, everybody, any time.</p>
+        <p class="foot">Everywhere, everybody, anytime.</p>
     </div>
 </template>
 
