@@ -17,6 +17,20 @@
         background: linear-gradient(45deg, #dad4ff 0%,#7b4888de 100%);
         border-radius: .8vh;
         box-shadow: 10px 10px 80px -10px rgba(0,0,0,0.75);
+
+        /* background
+
+        background-image: url("../../assets/what-background.jpg");
+        background-repeat: no-repeat;
+        background-position: center;  */
+    }
+
+    .background-image{
+        background:
+            linear-gradient(45deg, #dad4ff 0%,#7b4888de 100%),
+            url("../../assets/what-background.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .section-content .title {
@@ -102,7 +116,7 @@
 
 <template>
     <div class="container">
-        <div class="section-content" id="get-static">
+        <div class="section-content background-image" id="get-static">
             <h3 class="title">{{ title }}</h3>
 
             <div class="section-box-group">
