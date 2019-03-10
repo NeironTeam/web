@@ -9,7 +9,7 @@
     }
 
     .line-a:before {
-        height: 70vh;
+        min-height: 600px;
         width: 120vw;
         left: -10vw;
         top: 17vh;
@@ -22,10 +22,10 @@
     }
 
     .line-b:before{
-        height: 80vh;
-        width: 120vw;
+        min-height: 700px;
+        width: 200vw;
         left: -10vw;
-        top:7vh;
+        top:10vh;
         z-index: -2;
         -ms-transform: rotate(5deg);
         -webkit-transform: rotate(5deg);
@@ -81,28 +81,20 @@
         }
 
         .line-a:before{
-            height: 100vh;
+            min-height: 800px;
             width: 150vw;
             left: -20vw;
             top: 30vh;
         }
 
         .line-b:before{
-            height: 45vh;
+            min-height: 300px;
             width: 120vw;
             left: -10vw;
             top:7vh;
         }
     }
 
-    @media only screen and (min-width: 1400px) {
-        .line-b:before{
-            height: 45vh;
-            width: 80vw;
-            left: -10vw;
-            top:7vh;
-        }
-    }
 
 
 </style>
