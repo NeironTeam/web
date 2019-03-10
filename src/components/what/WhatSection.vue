@@ -67,7 +67,7 @@
     }
 
 
-    @media only screen and (max-width: 978px) {
+    @media only screen and (max-width: 975px) {
         .container{
             height: auto;
         }
