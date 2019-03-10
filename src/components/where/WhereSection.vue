@@ -113,7 +113,7 @@ p {
     stroke-miterlimit:10; */
 }
 svg{
-    margin-bottom: -4px;
+    margin-bottom: -6px;
 }
 /* #svg548{
     box-shadow: 10px 10px 80px -10px rgba(0,0,0,0.75);
