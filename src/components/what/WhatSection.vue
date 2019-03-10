@@ -9,7 +9,7 @@
     }
 
     .line-a:before {
-        height: 60vh;
+        height: 50vh;
         width: 120vw;
         left: -10vw;
         top: 17vh;
@@ -40,7 +40,7 @@
         position: relative;
         width: 100%;
         height: auto;
-        min-height: 100vh;
+        min-height: 50vh;
         margin: 0vh 0 0vh;
         padding: 100px 5vw 5vh;
     }
@@ -94,8 +94,17 @@
             left: -10vw;
             top:7vh;
         }
-
     }
+
+    @media only screen and (min-width: 1400px) {
+        .line-b:before{
+            height: 45vh;
+            width: 80vw;
+            left: -10vw;
+            top:7vh;
+        }
+    }
+
 
 </style>
 
