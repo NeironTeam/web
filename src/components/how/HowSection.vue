@@ -6,7 +6,7 @@
     width: 100%;
     height: auto;
     min-height: 100vh;
-    padding: 160px 5vw 0;
+    padding: 100px 5vw 0;
     margin-bottom: -1vh; /* fix white line */
 }
 
@@ -26,7 +26,7 @@
     display: flex;
     width: 100vw;
     margin-left: -5vw;
-    padding: 10vh 5vw 5vh;
+    padding: 0vh 5vw 5vh;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
@@ -46,7 +46,7 @@
 .line{
     content:'';
     position: absolute;
-    height: 50vh;
+    height: 35vh;
     width: 120vw;
     left: -10vw;
     top: 0vh;
