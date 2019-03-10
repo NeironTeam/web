@@ -6,7 +6,7 @@
         <WhatSection id="what" title="What is neiron dev?"/>
         <WhoSection id="who" title="Who?"/>
         <HowSection id="how"
-            title="How we can help you?"
+            title="How can we help you?"
             background-text="how?"/>
         <WhereSection id="where"/>
         <ContactSection/>
