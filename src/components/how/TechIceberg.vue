@@ -23,7 +23,7 @@
     width: 100vw;
     height: 28vh;
     background: #1f61c4;
-    box-shadow: 0px -10px 30px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px -20px 30px -20px rgba(0,0,0,0.75);
 }
 
 #sun {

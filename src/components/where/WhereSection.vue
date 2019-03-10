@@ -75,7 +75,7 @@ p {
     height: auto;
     max-width: 100vw;
     overflow-x: hidden;
-    padding: 10vh 0;
+    padding: 0 0 10vh;
 }
 
 .top-color{
