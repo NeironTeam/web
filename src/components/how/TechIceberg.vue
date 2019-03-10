@@ -30,8 +30,10 @@
     display: inline-block;
     vertical-align: top;
     position: relative;
-    width: 40vh;
-    height: 40vh;
+    width: 30vw;
+    height: 30vw;
+    min-width: 400px;
+    min-height: 400px;
     background: rgb(218, 34, 52);
     border-radius: 50%;
     box-shadow: 0px -10px 30px -15px rgba(0,0,0,0.75);
