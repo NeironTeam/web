@@ -12,7 +12,7 @@
 
 .section-content .title {
     font-size: 5vh;
-    color: black;
+    color: white;
 }
 
 .section-content .section-iceberg {
@@ -57,6 +57,15 @@
     background-color: rgb(136, 55, 206);/*(206, 173, 232);*/
     box-shadow: 0px 5px 50px -10px rgba(0,0,0,0.75);
 }
+
+.section-content .section-technologies .service {
+    color: white;
+    background: transparent;
+    box-shadow: none;
+    margin: 0vh 1vw;
+    padding: 1vh 2vw;
+}
+
 
 </style>
 
@@ -113,17 +122,17 @@ export default {
             technologies: [
                 {
                     icon: "icon-screen-smartphone",
-                    title: "Customised service",
+                    title: "Conversational bots",
                     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 },
                 {
                     icon: "icon-screen-desktop",
-                    title: "Tighter budget",
+                    title: "Web development",
                     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 },
                 {
                     icon: "icon-organization",
-                    title: "Last technologies",
+                    title: "Backend & DevOps",
                     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 },
             ]

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>{{title}}</h1>
+        <h1 class="title">{{title}}</h1>
         <div class="profiles">
             <div v-for="(row, index) in rows" :key="index" class="row-profiles">
                 <Person
@@ -12,7 +12,6 @@
                 v-for="(person, index) in row"
                 :key="index"/>
                 </div>
-            
         </div>
     </div>
 </template>
@@ -37,19 +36,16 @@ export default {
                                 text: "Twiter",
                                 icon: "icon-social-twitter",
                                 link: "twitter.com",
-                                
                             },
                             {
                                 text: "Linkdin",
                                 icon: "icon-social-linkedin",
                                 link: "twitter.com",
-                                
                             },
                             {
                                 text: "GitHub",
                                 icon: "devicon-github-plain",
                                 link: "twitter.com",
-                                
                             },
                         ],
                     },
@@ -64,19 +60,16 @@ export default {
                                 text: "Twiter",
                                 icon: "icon-social-twitter",
                                 link: "twitter.com",
-                                
                             },
                             {
                                 text: "Linkdin",
                                 icon: "icon-social-linkedin",
                                 link: "twitter.com",
-                                
                             },
                             {
                                 text: "GitHub",
                                 icon: "devicon-github-plain",
                                 link: "twitter.com",
-                                
                             },
                         ],
                     },
@@ -93,19 +86,16 @@ export default {
                                 text: "Twiter",
                                 icon: "icon-social-twitter",
                                 link: "twitter.com",
-                                
                             },
                             {
                                 text: "Linkdin",
                                 icon: "icon-social-linkedin",
                                 link: "twitter.com",
-                                
                             },
                             {
                                 text: "GitHub",
                                 icon: "devicon-github-plain",
                                 link: "twitter.com",
-                                
                             },
                         ],
                     },
@@ -120,19 +110,16 @@ export default {
                                 text: "Twiter",
                                 icon: "icon-social-twitter",
                                 link: "twitter.com",
-                                
                             },
                             {
                                 text: "Linkdin",
                                 icon: "icon-social-linkedin",
                                 link: "twitter.com",
-                                
                             },
                             {
                                 text: "GitHub",
                                 icon: "devicon-github-plain",
                                 link: "twitter.com",
-                                
                             },
                         ],
                     },
@@ -172,6 +159,10 @@ h1 {
     flex-flow: row wrap;
     justify-content: space-around;
     flex-basis: 50%;
+}
+
+.title{
+    color:white;
 }
 
 </style>
