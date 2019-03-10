@@ -23,17 +23,17 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 @keyframes on-off {
-    0% {color: #134186; font-weight: 700;}
-    49% {color: #134186; font-weight: 700;}
-    50% {color: #1f61c4; font-weight: 500;}
-    100% {color: #1f61c4; font-weight: 500;}
+    0% {color: #1f61c4; font-weight: 700;}
+    49% {color: #1f61c4; font-weight: 700;}
+    50% {color: #444; font-weight: 500;}
+    100% {color: #444; font-weight: 500;}
 }
 
 @keyframes off-on {
-    0% {color: #1f61c4; font-weight: 500;}
-    49% {color: #1f61c4; font-weight: 500;}
-    50% {color: #134186; font-weight: 700;}
-    100% {color: #134186; font-weight: 700;}
+    0% {color: #444; font-weight: 500;}
+    49% {color: #444; font-weight: 500;}
+    50% {color: #1f61c4; font-weight: 700;}
+    100% {color: #1f61c4; font-weight: 700;}
 }
 
 p {
@@ -45,8 +45,7 @@ p {
     background-color: #1f61c4;
     color: white;
     font-size: 40pt;
-    padding-left: 50px;
-
+    padding: 10vh 0 10vh 50px;
 }
 
 .foot {

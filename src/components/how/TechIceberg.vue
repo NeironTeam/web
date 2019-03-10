@@ -30,7 +30,7 @@
     display: inline-block;
     vertical-align: top;
     position: relative;
-    width: 55vh;
+    width: 52vh;
     height: 30vh;
     margin-bottom: 25vh;
     overflow: hidden;
@@ -39,10 +39,10 @@
 #sun::before{
     content: '';
     position: absolute;
-    top: 5vh;
-    left: 5vh;
-    width: 45vh;
-    height: 45vh;
+    top: 3vh;
+    left: 3vh;
+    width: 46vh;
+    height: 46vh;
     background: rgb(218, 34, 52);
     border-radius: 50%;
     box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.75);

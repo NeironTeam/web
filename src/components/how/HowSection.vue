@@ -44,6 +44,14 @@
     background: #1f61c4;
 }
 
+.section-content .section-technologies .service {
+    color: white;
+    background: transparent;
+    box-shadow: none;
+    margin: 0vh 1vw;
+    padding: 1vh 2vw;
+}
+
 </style>
 
 <template>
@@ -98,17 +106,17 @@ export default {
             technologies: [
                 {
                     icon: "icon-screen-smartphone",
-                    title: "Customised service",
+                    title: "Conversational bots",
                     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 },
                 {
                     icon: "icon-screen-desktop",
-                    title: "Tighter budget",
+                    title: "Web development",
                     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 },
                 {
                     icon: "icon-organization",
-                    title: "Last technologies",
+                    title: "Backend & DevOps",
                     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 },
             ]
