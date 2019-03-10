@@ -30,6 +30,8 @@
     align-items: stretch;
 }
 
+
+
 </style>
 
 <template>

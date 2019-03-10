@@ -59,6 +59,14 @@
     transform: translateX(-110%);
 }
 
+/* .water {
+    height: 100%;
+    width: 100%;
+    padding-top: 50%;
+    position: absolute;
+    background-color: blue;
+} */
+
 @media screen and (max-width: 875px) {
     #iceberg-container { text-align: center; }
 
@@ -83,6 +91,7 @@
 <template>
     <div id="iceberg-container">
         <img id="background" class="shadow" src="../../assets/iceberg/background.svg"/>
+        <div class="water"></div>
         <img id="bots" class="bubble shadow" src="../../assets/iceberg/bots.svg"/>
         <img id="web" class="bubble shadow" src="../../assets/iceberg/web.svg"/>
         <img id="backend" class="bubble shadow" src="../../assets/iceberg/backend.svg"/>
