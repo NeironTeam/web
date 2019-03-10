@@ -17,7 +17,7 @@
         -ms-transform: rotate(-10deg);
         -webkit-transform: rotate(-10deg);
         transform: rotate(-10deg);
-        background-color: rgb(206, 173, 232);
+        background-color: rgb(218, 34, 52);/*(206, 173, 232);*/
         box-shadow: 0px 5px 50px -10px rgba(0,0,0,0.75);
     }
 
@@ -30,7 +30,7 @@
         -ms-transform: rotate(5deg);
         -webkit-transform: rotate(5deg);
         transform: rotate(5deg);
-        background-color: rgb(242,178,178);
+        background-color: rgb(136, 55, 206);/*rgb(242,178,178);*/
     }
 
 

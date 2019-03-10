@@ -2,14 +2,17 @@
     <div>
         <h1>{{title}}</h1>
         <div class="profiles">
-            <Person
-            :name="person.name"
-            :img="person.img"
-            :position="person.position"
-            :description="person.description"
-            :socialNetworks="person.socialNetworks"
-            v-for="(person, index) in persons"
-            :key="index"/>
+            <div v-for="(row, index) in rows" :key="index" class="row-profiles">
+                <Person
+                :name="person.name"
+                :img="person.img"
+                :position="person.position"
+                :description="person.description"
+                :socialNetworks="person.socialNetworks"
+                v-for="(person, index) in row"
+                :key="index"/>
+                </div>
+            
         </div>
     </div>
 </template>
@@ -21,139 +24,119 @@ export default {
     name: "WhoSection",
     data() {
         return {
-            persons: [
-                {
-                    name: "Pepe",
-                    position: "Data Scientist",
-                    description:
-                        "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
-                    img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
-                    socialNetworks: [
-                        {
-                            text: "Twiter",
-                            icon: "icon-social-twitter",
-                            link: "twitter.com",
-                            styles: {
-                                backgroundColor: "#00aced",
+            rows: [
+                [
+                    {
+                        name: "Pepe",
+                        position: "Data Scientist",
+                        description:
+                            "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
+                        img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
+                        socialNetworks: [
+                            {
+                                text: "Twiter",
+                                icon: "icon-social-twitter",
+                                link: "twitter.com",
+                                
                             },
-                        },
-                        {
-                            text: "Linkdin",
-                            icon: "icon-book-open",
-                            link: "twitter.com",
-                            styles: {
-                                backgroundColor: "#0077B5",
+                            {
+                                text: "Linkdin",
+                                icon: "icon-social-linkedin",
+                                link: "twitter.com",
+                                
                             },
-                        },
-                        {
-                            text: "GitHub",
-                            icon: "devicon-github-plain",
-                            link: "twitter.com",
-                            styles: {
-                                backgroundColor: "#353535",
+                            {
+                                text: "GitHub",
+                                icon: "devicon-github-plain",
+                                link: "twitter.com",
+                                
                             },
-                        },
-                    ],
-                },
-                {
-                    name: "Pepe",
-                    position: "Data Scientist",
-                    description:
-                        "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
-                    img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
-                    socialNetworks: [
-                        {
-                            text: "Twiter",
-                            icon: "icon-social-twitter",
-                            link: "twitter.com",
-                            styles: {
-                                backgroundColor: "#00aced",
+                        ],
+                    },
+                    {
+                        name: "Pepe",
+                        position: "Data Scientist",
+                        description:
+                            "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
+                        img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
+                        socialNetworks: [
+                            {
+                                text: "Twiter",
+                                icon: "icon-social-twitter",
+                                link: "twitter.com",
+                                
                             },
-                        },
-                        {
-                            text: "Linkdin",
-                            icon: "icon-book-open",
-                            link: "twitter.com",
-                            styles: {
-                                backgroundColor: "#0077B5",
+                            {
+                                text: "Linkdin",
+                                icon: "icon-social-linkedin",
+                                link: "twitter.com",
+                                
                             },
-                        },
-                        {
-                            text: "GitHub",
-                            icon: "devicon-github-plain",
-                            link: "twitter.com",
-                            styles: {
-                                backgroundColor: "#353535",
+                            {
+                                text: "GitHub",
+                                icon: "devicon-github-plain",
+                                link: "twitter.com",
+                                
                             },
-                        },
-                    ],
-                },
-                {
-                    name: "Pepe",
-                    position: "Data Scientist",
-                    description:
-                        "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
-                    img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
-                    socialNetworks: [
-                        {
-                            text: "Twiter",
-                            icon: "icon-social-twitter",
-                            link: "twitter.com",
-                            styles: {
-                                backgroundColor: "#00aced",
+                        ],
+                    },
+                ],
+                [
+                    {
+                        name: "Pepe",
+                        position: "Data Scientist",
+                        description:
+                            "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
+                        img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
+                        socialNetworks: [
+                            {
+                                text: "Twiter",
+                                icon: "icon-social-twitter",
+                                link: "twitter.com",
+                                
                             },
-                        },
-                        {
-                            text: "Linkdin",
-                            icon: "icon-book-open",
-                            link: "twitter.com",
-                            styles: {
-                                backgroundColor: "#0077B5",
+                            {
+                                text: "Linkdin",
+                                icon: "icon-social-linkedin",
+                                link: "twitter.com",
+                                
                             },
-                        },
-                        {
-                            text: "GitHub",
-                            icon: "devicon-github-plain",
-                            link: "twitter.com",
-                            styles: {
-                                backgroundColor: "#353535",
+                            {
+                                text: "GitHub",
+                                icon: "devicon-github-plain",
+                                link: "twitter.com",
+                                
                             },
-                        },
-                    ],
-                },
-                {
-                    name: "Pepe",
-                    position: "Data Scientist",
-                    description:
-                        "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
-                    img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
-                    socialNetworks: [
-                        {
-                            text: "Twiter",
-                            icon: "icon-social-twitter",
-                            link: "twitter.com",
-                            styles: {
-                                backgroundColor: "#00aced",
+                        ],
+                    },
+                    {
+                        name: "Pepe",
+                        position: "Data Scientist",
+                        description:
+                            "Est tempor aliquip dolore esse commodo eiusmod mollit ut fugiat est velit proident mollit.",
+                        img: "https://images.unsplash.com/photo-1484186139897-d5fc6b908812",
+                        socialNetworks: [
+                            {
+                                text: "Twiter",
+                                icon: "icon-social-twitter",
+                                link: "twitter.com",
+                                
                             },
-                        },
-                        {
-                            text: "Linkdin",
-                            icon: "icon-book-open",
-                            link: "twitter.com",
-                            styles: {
-                                backgroundColor: "#0077B5",
+                            {
+                                text: "Linkdin",
+                                icon: "icon-social-linkedin",
+                                link: "twitter.com",
+                                
                             },
-                        },
-                        {
-                            text: "GitHub",
-                            icon: "devicon-github-plain",
-                            link: "twitter.com",
-                            styles: {
-                                backgroundColor: "#353535",
+                            {
+                                text: "GitHub",
+                                icon: "devicon-github-plain",
+                                link: "twitter.com",
+                                
                             },
-                        },
-                    ],
-                },
+                        ],
+                    },
+                ]
             ],
         };
     },
@@ -169,40 +152,26 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1 {
-    font-size: 10vw;
+    font-size: 5vh;
     padding: 50px 0px 0px 100px;
 }
 .profiles {
-    display: block;
+    display: flex;
+    flex-flow: row wrap;
     margin: auto;
-    position: relative;
     text-align: center;
-    height: 50%;
     font-size: 1rem;
     bottom: 10%;
     margin-top: 8vw;
+    justify-content: space-around;
+    
+}
+.row-profiles {
+    display: flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    flex-basis: 50%;
 }
 
-#who {
-    background-image: url("../../assets/FondoWho.jpg");
-    background-position: center;
-    background-size: cover;
-    color: white;
-    padding-bottom: 15vh;
-}
-@media only screen and (max-width: 1300px) {
-    h1 {
-        font-size: 8vw;
-    }
-}
-@media only screen and (max-width: 978px) {
-    h1 {
-        font-size: 10vw;
-    }
-}
-@media only screen and (max-width: 650px) {
-    h1 {
-        font-size: 12vw;
-    }
-}
 </style>

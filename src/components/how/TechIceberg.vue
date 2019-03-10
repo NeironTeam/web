@@ -43,7 +43,7 @@
     left: 5vh;
     width: 45vh;
     height: 45vh;
-    background: #FBB03B;
+    background: rgb(218, 34, 52);
     border-radius: 50%;
     box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.75);
 }
