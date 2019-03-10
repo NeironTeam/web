@@ -48,6 +48,7 @@
 }
 
 body {
+    overflow-x: hidden;
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
