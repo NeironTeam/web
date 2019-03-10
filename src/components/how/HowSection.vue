@@ -30,7 +30,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    background: white;
 }
 
 .section-content .section-technologies {
@@ -44,10 +43,26 @@
     background: #1f61c4;
 }
 
+.line{
+    content:'';
+    position: absolute;
+    height: 50vh;
+    width: 120vw;
+    left: -10vw;
+    top: 0vh;
+    z-index: -1;
+    -ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    background-color: rgb(136, 55, 206);/*(206, 173, 232);*/
+    box-shadow: 0px 5px 50px -10px rgba(0,0,0,0.75);
+}
+
 </style>
 
 <template>
     <div class="section-content">
+        <div class="line"></div>
         <h3 class="title">{{ title }}</h3>
         <div class="section-services">
             <ServiceItem v-for="(service, index) in services"
