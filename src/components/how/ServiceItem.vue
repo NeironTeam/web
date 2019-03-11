@@ -5,7 +5,7 @@
         width: 100%;
         height: auto;
         margin: 5vh 1vw;
-        padding: 3vh 2vw;
+        padding: 2vh 3vw;
         border-radius: .8vh;
         background: white;
         text-align: center;

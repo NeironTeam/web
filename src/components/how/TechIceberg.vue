@@ -21,7 +21,7 @@
     left: -5vw;
     vertical-align: top;
     width: 100vw;
-    height: 28vh;
+    height: 50%;
     background: #1f61c4;
     box-shadow: 0px -20px 30px -20px rgba(0,0,0,0.75);
 }
@@ -30,22 +30,13 @@
     display: inline-block;
     vertical-align: top;
     position: relative;
-    width: 52vh;
-    height: 30vh;
-    margin-bottom: 25vh;
-    overflow: hidden;
-}
-
-#sun::before{
-    content: '';
-    position: absolute;
-    top: 3vh;
-    left: 3vh;
-    width: 46vh;
-    height: 46vh;
+    width: 30vw;
+    height: 30vw;
+    min-width: 400px;
+    min-height: 400px;
     background: rgb(218, 34, 52);
     border-radius: 50%;
-    box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px -10px 30px -15px rgba(0,0,0,0.75);
 }
 
 #iceberg {
@@ -53,7 +44,7 @@
     width: 40vh;
     height: auto;
     max-width: 200px;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;

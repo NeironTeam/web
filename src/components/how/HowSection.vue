@@ -47,8 +47,10 @@
         color: white;
         background: transparent;
         box-shadow: none;
-        margin: 0vh 1vw;
-        padding: 1vh 2vw;
+        margin: 2vh 3vw;
+        padding: 1vh 0 3vh;
+        border-bottom: 1px solid white;
+        border-radius: 0;
     }
 
     .line:before{
@@ -66,7 +68,7 @@
         box-shadow: 0px 5px 50px -10px rgba(0,0,0,0.75);
     }
 
-    @media only screen and (max-width: 978px) {
+    @media only screen and (max-width: 975px) {
 
         .section-content .section-services,
         .section-content .section-technologies {
@@ -75,8 +77,9 @@
         }
 
         .line:before{
-            min-height: 900px;
+            min-height: 38%;
         }
+
     }
 
 </style>

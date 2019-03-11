@@ -17,8 +17,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .image-cropper {
-    width: 13vw;
-    height: 13vw;
+    width: 204px;
+    height: 204px;
     overflow: hidden;
     border-radius: 50%;
     display: block;
@@ -35,25 +35,5 @@ img {
     z-index: 20;
 }
 
-@media only screen and (max-width: 1300px) {
-    .image-cropper {
-        width: 17vw;
-        height: 17vw;
-        margin-top: -11vw;
-    }
-}
-@media only screen and (max-width: 978px) {
-    .image-cropper {
-        width: 21vw;
-        height: 21vw;
-        margin-top: -13vw;
-    }
-}
-@media only screen and (max-width: 650px) {
-    .image-cropper {
-        width: 49vw;
-        height: 49vw;
-        margin-top: -28vw;
-    }
-}
+
 </style>

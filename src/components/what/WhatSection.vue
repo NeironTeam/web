@@ -67,7 +67,7 @@
     }
 
 
-    @media only screen and (max-width: 978px) {
+    @media only screen and (max-width: 975px) {
         .container{
             height: auto;
         }
@@ -84,11 +84,11 @@
             min-height: 800px;
             width: 150vw;
             left: -20vw;
-            top: 30vh;
+            top: 80vh;
         }
 
         .line-b:before{
-            min-height: 300px;
+            min-height: 600px;
             width: 120vw;
             left: -10vw;
             top:7vh;

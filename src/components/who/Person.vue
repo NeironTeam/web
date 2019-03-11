@@ -91,7 +91,7 @@ export default {
 }
 .social-links {
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 
 }
 
