@@ -136,10 +136,12 @@ export default {
 }
 
 .title{
-    color: #dddddd;
+    color: white;
+    text-shadow: -1px 1px 5px rgb(0,0,0,0.3);
 }
 .subtitle{
-    color:#dddddd;
+    color: white;
+    text-shadow: -1px 1px 5px rgb(0,0,0,0.3);
 }
 
 

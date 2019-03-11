@@ -1,6 +1,6 @@
 
 <template>
-    <div id="app">
+    <div class="wrapper" id="app">
         <NavBar/>
         <Index id="index"/>
         <WhatSection id="what" title="What is neiron dev?"/>
@@ -48,10 +48,13 @@
 }
 
 body {
-    overflow-x: hidden;
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
+}
+
+.wrapper{
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
