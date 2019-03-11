@@ -44,7 +44,7 @@
     width: 40vh;
     height: auto;
     max-width: 200px;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
