@@ -25,7 +25,7 @@
         min-height: 700px;
         width: 200vw;
         left: -10vw;
-        top:10vh;
+        top: 20vh;
         z-index: -2;
         -ms-transform: rotate(5deg);
         -webkit-transform: rotate(5deg);
