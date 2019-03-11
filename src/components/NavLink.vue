@@ -23,6 +23,25 @@
 .nav-link.active { color: #000; }
 
 .nav-link.active:after { color: #000; }
+
+.icon{
+    display: none;
+}
+
+.text{
+    display: inline-block;
+}
+
+@media only screen and (max-width: 500px) {
+    .icon{
+        display: inline-block;
+    }
+    .text{
+        display: none;
+    }
+
+}
+
 </style>
 
 <template>
@@ -30,7 +49,11 @@
         :class="{ 'active': active }"
         href="#" 
         v-scroll-to="link">
+        <span class="icon" :class="icon">
+        </span>
+        <span class="text">
             {{ text }}
+        </span>
     </a>
 </template>
 
@@ -40,7 +63,8 @@ export default {
     props: {
         text: String,
         link: String,
-        active: Boolean
+        active: Boolean,
+        icon: String
     },
     immediate: true
 };

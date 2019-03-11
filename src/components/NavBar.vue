@@ -36,7 +36,8 @@
                 :href="link.link"
                 :text="link.text"
                 :link="link.link"
-                :active="link.active"/>
+                :active="link.active"
+                :icon="link.icon"/>
         </div>
     </div>
 </template>
@@ -73,22 +74,26 @@ export default {
                 {
                     text: "What",
                     link: "#what",
-                    active: false
+                    active: false,
+                    icon: "icon-info"
                 },
                 {
                     text: "Who",
                     link: "#who",
-                    active: false
+                    active: false,
+                    icon: "icon-user-female"
                 },
                 {
                     text: "How",
                     link: "#how",
-                    active: false
+                    active: false,
+                    icon: "icon-wrench"
                 },
                 {
                     text: "Where",
                     link: "#where",
-                    active: false
+                    active: false,
+                    icon: "icon-location-pin"
                 },
             ],
         };
