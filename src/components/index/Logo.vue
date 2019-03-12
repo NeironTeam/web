@@ -2,7 +2,18 @@
     <svg version="1.1" id="Neurona" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="448.999px" height="454.201px" viewBox="0 0 448.999 454.201" enable-background="new 0 0 448.999 454.201"
         xml:space="preserve">
-    <g id="Body">
+    <filter id="dropshadow" height="130%">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> <!-- stdDeviation is how much to blur -->
+        <feOffset dx="2" dy="2" result="offsetblur"/> <!-- how much to offset -->
+        <feComponentTransfer>
+            <feFuncA type="linear" slope="0.5"/> <!-- slope is the opacity of the shadow -->
+        </feComponentTransfer>
+        <feMerge>
+            <feMergeNode/> <!-- this contains the offset blurred image -->
+            <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+    </feMerge>
+    </filter>
+    <g style="filter:url(#dropshadow)" id="Body">
         <path id="Dentrite_6" fill="#203479" d="M100.254,120.204c9.406-10.761,20.274-20.207,32.282-28.053L72.383,29.025
             c-2.338-2.867-5.896-4.7-9.883-4.7c-7.042,0-12.75,5.708-12.75,12.75c0,1.661,0.327,3.242,0.904,4.697l-0.083,0.048l0.46,0.798
             c0.286,0.589,0.606,1.157,0.976,1.692l45.579,79.036C98.463,122.289,99.35,121.238,100.254,120.204z"/>
@@ -501,5 +512,10 @@ svg {
     width: 100%;
     height: auto;
 }
+
+#body{
+    box-shadow: -1px 1px 5px rgb(0,0,0,0.3);
+}
+
 </style>
 
